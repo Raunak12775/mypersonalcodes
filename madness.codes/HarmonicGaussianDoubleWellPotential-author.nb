@@ -1,0 +1,2188 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     91892,       2179]
+NotebookOptionsPosition[     87546,       2046]
+NotebookOutlinePosition[     89148,       2096]
+CellTagsIndexPosition[     88820,       2084]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Harmonic-Gaussian Double-Well Potential", "DemoTitle",
+ CellChangeTimes->{3.571584478551306*^9}],
+
+Cell["", "InitializationSection"],
+
+Cell[CellGroupData[{
+
+Cell["", "ManipulateSection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Quiet", "@", 
+    RowBox[{"Show", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"Evaluate", "@", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"\[Epsilon]", "[", 
+            RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "0"}], "]"}], ",", 
+           RowBox[{"\[Epsilon]", "[", 
+            RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "1"}], "]"}], ",", 
+           RowBox[{"\[Epsilon]", "[", 
+            RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "2"}], "]"}], ",", 
+           RowBox[{"\[Epsilon]", "[", 
+            RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "3"}], "]"}], ",", 
+           RowBox[{"\[Epsilon]", "[", 
+            RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "4"}], "]"}], ",", 
+           RowBox[{"\[Epsilon]", "[", 
+            RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "5"}], "]"}]}], "}"}]}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", 
+          RowBox[{"-", "4"}], ",", "4"}], "}"}], ",", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"Directive", "[", 
+          RowBox[{"{", 
+           RowBox[{"Thick", ",", "Red"}], "}"}], "]"}]}], ",", 
+        RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+        RowBox[{"AxesOrigin", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], ",", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", ".1"}], ",", "6"}], "}"}]}], ",", 
+        RowBox[{"AspectRatio", "\[Rule]", ".8"}], ",", 
+        RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+        RowBox[{"FrameLabel", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{"x", ",", "16"}], "]"}], ",", 
+           RowBox[{"Style", "[", 
+            RowBox[{"\"\<energy\>\"", ",", "16"}], "]"}]}], "}"}]}]}], "]"}], 
+      ",", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "x"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", 
+          RowBox[{"-", "4"}], ",", "4"}], "}"}], ",", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"Thick", ",", "Black"}], "}"}]}], ",", 
+        RowBox[{"AxesLabel", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{"\"\<energy\>\"", ",", "18"}], "]"}], ",", 
+           RowBox[{"Style", "[", 
+            RowBox[{"\"\<x\>\"", ",", "18", ",", "Italic"}], "]"}]}], "}"}]}],
+         ",", 
+        RowBox[{"Filling", "\[Rule]", "Axis"}], ",", 
+        RowBox[{"FillingStyle", "\[Rule]", "White"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Text", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"TraditionalForm", "[", 
+              RowBox[{"V", "[", "x", "]"}], "]"}], ",", "16"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "3.5"}], ",", "4"}], "}"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", "Red", ",", "\[IndentingNewLine]", 
+         RowBox[{"Text", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"Row", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                SubscriptBox[
+                 RowBox[{"Style", "[", 
+                  RowBox[{"\"\<E\>\"", ",", "Italic"}], "]"}], "0"], ",", 
+                "\"\< = \>\"", ",", 
+                RowBox[{"NumberForm", "[", 
+                 RowBox[{
+                  RowBox[{"\[Epsilon]", "[", 
+                   RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "0"}], "]"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"4", ",", "3"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+             ",", "12"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", 
+             RowBox[{
+              RowBox[{"\[Epsilon]", "[", 
+               RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "0"}], "]"}], "-", 
+              ".175"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Text", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"Row", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                SubscriptBox[
+                 RowBox[{"Style", "[", 
+                  RowBox[{"\"\<E\>\"", ",", "Italic"}], "]"}], "1"], ",", 
+                "\"\< = \>\"", ",", 
+                RowBox[{"NumberForm", "[", 
+                 RowBox[{
+                  RowBox[{"\[Epsilon]", "[", 
+                   RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "1"}], "]"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"4", ",", "3"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+             ",", "12"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", 
+             RowBox[{
+              RowBox[{"\[Epsilon]", "[", 
+               RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "1"}], "]"}], "+", 
+              ".15"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Text", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"Row", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                SubscriptBox[
+                 RowBox[{"Style", "[", 
+                  RowBox[{"\"\<E\>\"", ",", "Italic"}], "]"}], "2"], ",", 
+                "\"\< = \>\"", ",", 
+                RowBox[{"NumberForm", "[", 
+                 RowBox[{
+                  RowBox[{"\[Epsilon]", "[", 
+                   RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "2"}], "]"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"4", ",", "3"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+             ",", "12"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1.25", ",", 
+             RowBox[{
+              RowBox[{"\[Epsilon]", "[", 
+               RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "2"}], "]"}], "-", 
+              ".175"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Text", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"Row", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                SubscriptBox[
+                 RowBox[{"Style", "[", 
+                  RowBox[{"\"\<E\>\"", ",", "Italic"}], "]"}], "3"], ",", 
+                "\"\< = \>\"", ",", 
+                RowBox[{"NumberForm", "[", 
+                 RowBox[{
+                  RowBox[{"\[Epsilon]", "[", 
+                   RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "3"}], "]"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"4", ",", "3"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+             ",", "12"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1.25", ",", 
+             RowBox[{
+              RowBox[{"\[Epsilon]", "[", 
+               RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "3"}], "]"}], "+", 
+              ".15"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Text", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"Row", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                SubscriptBox[
+                 RowBox[{"Style", "[", 
+                  RowBox[{"\"\<E\>\"", ",", "Italic"}], "]"}], "4"], ",", 
+                "\"\< = \>\"", ",", 
+                RowBox[{"NumberForm", "[", 
+                 RowBox[{
+                  RowBox[{"\[Epsilon]", "[", 
+                   RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "4"}], "]"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"4", ",", "3"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+             ",", "12"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1.25", ",", 
+             RowBox[{
+              RowBox[{"\[Epsilon]", "[", 
+               RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "4"}], "]"}], "+", 
+              ".15"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Text", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"Row", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                SubscriptBox[
+                 RowBox[{"Style", "[", 
+                  RowBox[{"\"\<E\>\"", ",", "Italic"}], "]"}], "5"], ",", 
+                "\"\< = \>\"", ",", 
+                RowBox[{"NumberForm", "[", 
+                 RowBox[{
+                  RowBox[{"\[Epsilon]", "[", 
+                   RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "5"}], "]"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"4", ",", "3"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+             ",", "12"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1.25", ",", 
+             RowBox[{
+              RowBox[{"\[Epsilon]", "[", 
+               RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "5"}], "]"}], "+", 
+              ".15"}]}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", "}"}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"ImageSize", "\[Rule]", "500"}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Alpha]", ",", "2"}], "}"}], ",", "0", ",", "5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Beta]", ",", "5"}], "}"}], ",", "1", ",", "10", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+    RowBox[{"{", 
+     RowBox[{"\[Alpha]", ",", "\[Beta]"}], "}"}]}], ",", 
+   RowBox[{"ContinuousAction", "\[Rule]", "False"}], ",", 
+   RowBox[{"Initialization", "\[RuleDelayed]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"\[Alpha]_", ",", "\[Beta]_", ",", "x_"}], "]"}], ":=", 
+       RowBox[{
+        RowBox[{
+         FractionBox["1", "2"], 
+         SuperscriptBox["x", "2"]}], "+", 
+        RowBox[{"\[Alpha]", " ", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "\[Beta]"}], " ", 
+           SuperscriptBox["x", "2"]}]]}]}]}], ";", 
+      RowBox[{
+       RowBox[{"\[Phi]", "[", 
+        RowBox[{"n_", ",", "x_"}], "]"}], ":=", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["2", "n"], 
+           RowBox[{"n", "!"}], 
+           SqrtBox["\[Pi]"]}], ")"}], 
+         RowBox[{
+          RowBox[{"-", "1"}], "/", "2"}]], 
+        RowBox[{"HermiteH", "[", 
+         RowBox[{"n", ",", "x"}], "]"}], 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", 
+           SuperscriptBox["x", "2"]}], "/", "2"}]]}]}], ";", "\n", 
+      RowBox[{
+       RowBox[{"v", "[", 
+        RowBox[{"\[Alpha]_", ",", "\[Beta]_", ",", "i_", ",", "j_"}], "]"}], ":=", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"OddQ", "[", 
+           RowBox[{"i", "+", "j"}], "]"}], "\[Equal]", "True"}], ",", "0", 
+         ",", 
+         RowBox[{"NIntegrate", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"\[Phi]", "[", 
+             RowBox[{"i", ",", "x"}], "]"}], "\[Alpha]", " ", 
+            SuperscriptBox["\[ExponentialE]", 
+             RowBox[{
+              RowBox[{"-", "\[Beta]"}], " ", 
+              SuperscriptBox["x", "2"]}]], 
+            RowBox[{"\[Phi]", "[", 
+             RowBox[{"j", ",", "x"}], "]"}]}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"-", "\[Infinity]"}], ",", "\[Infinity]"}], "}"}], ",", 
+           RowBox[{"AccuracyGoal", "\[Rule]", "3"}]}], "]"}]}], "]"}]}], ";", 
+      RowBox[{
+       RowBox[{"\[Epsilon]", "[", 
+        RowBox[{"\[Alpha]_", ",", "\[Beta]_", ",", "0"}], "]"}], ":=", 
+       RowBox[{
+        FractionBox["1", "2"], "+", 
+        RowBox[{"v", "[", 
+         RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "0", ",", "0"}], "]"}], "+", 
+        RowBox[{"Sum", "[", 
+         RowBox[{
+          FractionBox[
+           SuperscriptBox[
+            RowBox[{"v", "[", 
+             RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "0", ",", "k"}], "]"}], 
+            "2"], 
+           RowBox[{"-", "k"}]], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", "2", ",", "8", ",", "2"}], "}"}]}], "]"}]}]}], 
+      ";", 
+      RowBox[{
+       RowBox[{"\[Epsilon]", "[", 
+        RowBox[{"\[Alpha]_", ",", "\[Beta]_", ",", "1"}], "]"}], ":=", 
+       RowBox[{
+        FractionBox["3", "2"], "+", 
+        RowBox[{"v", "[", 
+         RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "1", ",", "1"}], "]"}], "+", 
+        RowBox[{"Sum", "[", 
+         RowBox[{
+          FractionBox[
+           SuperscriptBox[
+            RowBox[{"v", "[", 
+             RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "1", ",", "k"}], "]"}], 
+            "2"], 
+           RowBox[{"1", "-", "k"}]], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", "3", ",", "7", ",", "2"}], "}"}]}], "]"}]}]}], 
+      ";", 
+      RowBox[{
+       RowBox[{"\[Epsilon]", "[", 
+        RowBox[{"\[Alpha]_", ",", "\[Beta]_", ",", "n_"}], "]"}], ":=", 
+       RowBox[{"n", "+", 
+        FractionBox["1", "2"], "+", 
+        RowBox[{"v", "[", 
+         RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "n", ",", "n"}], "]"}], "+", 
+        RowBox[{"Sum", "[", 
+         RowBox[{
+          FractionBox[
+           SuperscriptBox[
+            RowBox[{"v", "[", 
+             RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "n", ",", "k"}], "]"}], 
+            "2"], 
+           RowBox[{"n", "-", "k"}]], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", "0", ",", 
+            RowBox[{"n", "-", "2"}]}], "}"}]}], "]"}], "+", 
+        RowBox[{"Sum", "[", 
+         RowBox[{
+          FractionBox[
+           SuperscriptBox[
+            RowBox[{"v", "[", 
+             RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "n", ",", "k"}], "]"}], 
+            "2"], 
+           RowBox[{"n", "-", "k"}]], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"n", "+", "2"}], ",", "8"}], "}"}]}], "]"}]}]}], ";"}], 
+     ")"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.570817978800609*^9, 3.5708182278328543`*^9}, {
+   3.570818308437414*^9, 3.570818449674176*^9}, {3.5708188208185062`*^9, 
+   3.570818827096279*^9}, 3.570818892068185*^9, 3.570818927693509*^9, {
+   3.570818960470874*^9, 3.570818964685413*^9}, {3.5708189966808167`*^9, 
+   3.570819022183462*^9}, 3.570819122668845*^9, {3.570819167286581*^9, 
+   3.570819178436812*^9}, {3.57081921431212*^9, 3.570819229744822*^9}, {
+   3.570819281755488*^9, 3.570819285785763*^9}, {3.570819321141818*^9, 
+   3.5708193457813997`*^9}, {3.570827357155065*^9, 3.57082743837234*^9}, 
+   3.5708274909923763`*^9, {3.5708275803166227`*^9, 3.5708277456191874`*^9}, {
+   3.570827796684638*^9, 3.570827828573162*^9}, 3.570827869128066*^9, {
+   3.570827947923217*^9, 3.5708279726664753`*^9}, {3.570828184669211*^9, 
+   3.570828231925836*^9}, {3.570828275080452*^9, 3.570828291486639*^9}, {
+   3.570828380650923*^9, 3.570828532257081*^9}, {3.57082863677573*^9, 
+   3.570828701560115*^9}, {3.57082873214709*^9, 3.570828817502309*^9}, {
+   3.570828854468672*^9, 3.5708288892890167`*^9}, {3.570828923172797*^9, 
+   3.570828934668722*^9}, 3.570829841041274*^9, {3.570904402644335*^9, 
+   3.5709044130773697`*^9}, 3.570904450494306*^9, {3.570904484954711*^9, 
+   3.5709044882601337`*^9}, {3.570904850742188*^9, 3.570904863493108*^9}, {
+   3.5709049142087173`*^9, 3.570904949056682*^9}, {3.57090498203576*^9, 
+   3.570905040611598*^9}, {3.570905097752481*^9, 3.570905116849318*^9}, {
+   3.5709051560353117`*^9, 3.570905157505467*^9}, {3.5709053219312077`*^9, 
+   3.570905349018964*^9}, {3.570905418305985*^9, 3.570905448429928*^9}, {
+   3.5709055099286537`*^9, 3.570905537949682*^9}, {3.570905597566017*^9, 
+   3.570905647750701*^9}, {3.570906880345272*^9, 3.57090695836065*^9}, {
+   3.570907009046362*^9, 3.5709070272626677`*^9}, {3.570907071202821*^9, 
+   3.57090709969965*^9}, {3.570907136622527*^9, 3.5709071440457287`*^9}, {
+   3.570907187376322*^9, 3.570907212302723*^9}, 3.570907290012457*^9, {
+   3.570907344966701*^9, 3.570907354061646*^9}, {3.5709074461304502`*^9, 
+   3.570907447225031*^9}, {3.5709075237736483`*^9, 3.570907592235303*^9}, {
+   3.5709076245769377`*^9, 3.570907646409554*^9}, 3.5709077006081343`*^9, {
+   3.5709081753434687`*^9, 3.570908292402575*^9}, {3.570908336957082*^9, 
+   3.5709085047849197`*^9}, 3.570908573128161*^9, 3.5709087021971197`*^9, {
+   3.570908765751988*^9, 3.570908776528923*^9}, {3.570908969240533*^9, 
+   3.570908988820758*^9}, {3.570909108597911*^9, 3.570909113116556*^9}, 
+   3.5709091531595783`*^9, {3.5709093865365057`*^9, 3.570909405892749*^9}, {
+   3.5709094379389343`*^9, 3.570909442265603*^9}, {3.5709242482231817`*^9, 
+   3.570924260405148*^9}, {3.570926550857348*^9, 3.570926638249648*^9}, 
+   3.570926680620516*^9, {3.570926806322003*^9, 3.5709268220065393`*^9}, 
+   3.5709268784794903`*^9, {3.570926943792543*^9, 3.570926949495098*^9}, {
+   3.570927003361635*^9, 3.5709270157838984`*^9}, {3.570927047803158*^9, 
+   3.570927153443555*^9}, 3.570927239945652*^9, 3.5709273116938*^9, {
+   3.570927466627885*^9, 3.570927496333769*^9}, {3.5709275319102173`*^9, 
+   3.5709276795077972`*^9}, {3.5709278070344763`*^9, 
+   3.5709278204412394`*^9}, {3.570927980959364*^9, 3.5709280775793343`*^9}, {
+   3.570928108325742*^9, 3.57092816015898*^9}, {3.5709282587079144`*^9, 
+   3.5709282782928743`*^9}, {3.571085431110656*^9, 3.571085516905323*^9}, {
+   3.5710855536212683`*^9, 3.571085577432026*^9}, 3.571085654129683*^9, {
+   3.571085705617352*^9, 3.5710857236897583`*^9}, {3.57108576450756*^9, 
+   3.5710858961847677`*^9}, {3.571085984765456*^9, 3.571085989052143*^9}, {
+   3.5710861899811277`*^9, 3.571086290440549*^9}, {3.5710863244186907`*^9, 
+   3.5710863348474493`*^9}, {3.571086531475544*^9, 3.571086547194296*^9}, {
+   3.5710866400638638`*^9, 3.571086732370397*^9}, {3.571086908787149*^9, 
+   3.571086913126775*^9}, {3.571087170668748*^9, 3.571087217269552*^9}, 
+   3.571091422509171*^9, {3.571091535719879*^9, 3.571091556004884*^9}, {
+   3.5711019834426327`*^9, 3.5711020353139772`*^9}, {3.571102092372799*^9, 
+   3.571102092708664*^9}, {3.571102143022653*^9, 3.571102241459528*^9}, {
+   3.571102309173971*^9, 3.571102320102023*^9}, {3.571102385747799*^9, 
+   3.5711023883858337`*^9}, {3.571102486653824*^9, 3.57110248667244*^9}, {
+   3.571102546938608*^9, 3.5711025542828913`*^9}, {3.571102622853197*^9, 
+   3.5711026236101627`*^9}, {3.571102689903624*^9, 3.571102774113414*^9}, {
+   3.571102858087082*^9, 3.571102902773818*^9}, {3.571269635602474*^9, 
+   3.5712696461630173`*^9}, 3.571269722751019*^9, {3.571269908763628*^9, 
+   3.571269979469098*^9}, {3.571270040154806*^9, 3.571270048185857*^9}, {
+   3.571270112348898*^9, 3.5712701759337683`*^9}, {3.5712702272729673`*^9, 
+   3.571270262690564*^9}, {3.571270421248776*^9, 3.5712704434258003`*^9}, {
+   3.571270475523554*^9, 3.571270502677485*^9}, {3.571270691621623*^9, 
+   3.571270898339547*^9}, {3.571270935710081*^9, 3.5712709933235283`*^9}, {
+   3.5712710332024117`*^9, 3.5712710596461143`*^9}, 3.571271324535577*^9, {
+   3.571271499044799*^9, 3.5712716035287867`*^9}, {3.571271676171124*^9, 
+   3.571271703771142*^9}, {3.571271734919443*^9, 3.571271739708592*^9}, {
+   3.5712718808068857`*^9, 3.571271905756426*^9}, {3.571271949718339*^9, 
+   3.571272110708085*^9}, {3.571331271645774*^9, 3.571331479523942*^9}, {
+   3.571331532284192*^9, 3.571331856496237*^9}, {3.571331893888317*^9, 
+   3.5713319541858788`*^9}, {3.5713320647112703`*^9, 3.571332065628549*^9}, {
+   3.571332358620089*^9, 3.571332544359332*^9}, {3.571332641868347*^9, 
+   3.571332648797183*^9}, {3.5713326967523203`*^9, 3.571332715056904*^9}, {
+   3.571332781278318*^9, 3.5713327986061983`*^9}, {3.5713328369080544`*^9, 
+   3.5713328386507053`*^9}, {3.5713329087368603`*^9, 3.571333089000626*^9}, {
+   3.5713331499807043`*^9, 3.571333176029789*^9}, {3.571333224631877*^9, 
+   3.5713332782169857`*^9}, {3.5713335202279043`*^9, 3.571333533099195*^9}, {
+   3.57133370027499*^9, 3.571333716468914*^9}, {3.571333918189047*^9, 
+   3.571333938443009*^9}, {3.57133406964252*^9, 3.571334075201195*^9}, {
+   3.571334132215033*^9, 3.571334165275756*^9}, 3.571335130689673*^9, {
+   3.571335445433391*^9, 3.571335460977162*^9}, {3.571335509194309*^9, 
+   3.571335548831707*^9}, {3.571335651477128*^9, 3.571335667795403*^9}, {
+   3.571335739190027*^9, 3.571335739812148*^9}, {3.5713440113243513`*^9, 
+   3.5713440852287827`*^9}, 3.571344152130238*^9, {3.571345606760428*^9, 
+   3.571345683148634*^9}, {3.571345782861706*^9, 3.571345792412753*^9}, {
+   3.571345838814706*^9, 3.571345881720467*^9}, {3.571345915518641*^9, 
+   3.5713459354811077`*^9}, 3.571346129353343*^9, {3.571346166292028*^9, 
+   3.5713461913843527`*^9}, {3.571349386491583*^9, 3.5713493871700068`*^9}, {
+   3.571349418235362*^9, 3.571349418643097*^9}, {3.5713494826391907`*^9, 
+   3.5713495366363792`*^9}, {3.571349682640667*^9, 3.5713497297340593`*^9}, {
+   3.5713498028742228`*^9, 3.571349804033348*^9}, {3.571349848923052*^9, 
+   3.571349861011619*^9}, {3.5713498959810143`*^9, 3.571349906076304*^9}, {
+   3.571356311461849*^9, 3.5713563767814302`*^9}, {3.571356471267426*^9, 
+   3.571356506618558*^9}, {3.57135655073556*^9, 3.571356559356694*^9}, 
+   3.5713567300798903`*^9, 3.571357022530012*^9, {3.571357300276958*^9, 
+   3.571357412198772*^9}, {3.5713574611317*^9, 3.571357467342626*^9}, {
+   3.571357805681765*^9, 3.571357838792502*^9}, 3.5713580305279818`*^9, {
+   3.5714240714022303`*^9, 3.5714241142818336`*^9}, {3.571424158235462*^9, 
+   3.571424174068327*^9}, {3.571424209612174*^9, 3.571424371352644*^9}, {
+   3.5714246835547667`*^9, 3.571424742350284*^9}, {3.571424847986019*^9, 
+   3.571424854039949*^9}, {3.571424997824497*^9, 3.5714250059260197`*^9}, {
+   3.5714250423542137`*^9, 3.571425051192135*^9}, {3.5714321151089783`*^9, 
+   3.571432195754216*^9}, {3.571434424075096*^9, 3.571434510796674*^9}, {
+   3.5714352290021677`*^9, 3.571435290245049*^9}, {3.571435356512936*^9, 
+   3.571435427850415*^9}, {3.571435462798436*^9, 3.571435551387187*^9}, {
+   3.57143571104426*^9, 3.571435718770904*^9}, {3.571435815280484*^9, 
+   3.57143583066853*^9}, {3.571435877266548*^9, 3.571435878997696*^9}, {
+   3.5714360236879587`*^9, 3.5714360620320673`*^9}, {3.571436167693994*^9, 
+   3.571436181076498*^9}, {3.571436262401578*^9, 3.5714362746419983`*^9}, {
+   3.571436353277049*^9, 3.571436434087591*^9}, {3.571437031658289*^9, 
+   3.5714370360926437`*^9}, {3.571437077628366*^9, 3.571437112738401*^9}, {
+   3.571437206711289*^9, 3.571437244848654*^9}, {3.571437281689061*^9, 
+   3.5714372897371073`*^9}, {3.5715040721673613`*^9, 3.571504096905108*^9}, {
+   3.5715041761847067`*^9, 3.5715042057949667`*^9}, {3.571504253371646*^9, 
+   3.5715042721057987`*^9}, {3.571504317863729*^9, 3.571504321968635*^9}, {
+   3.571504355971654*^9, 3.57150444379102*^9}, {3.571504540940917*^9, 
+   3.5715045818925667`*^9}, {3.571504810399468*^9, 3.571504844687479*^9}, {
+   3.571504904715289*^9, 3.571504925180008*^9}, {3.571505048721599*^9, 
+   3.571505066312888*^9}, {3.571505140964658*^9, 3.571505238980592*^9}, {
+   3.5715052730901833`*^9, 3.5715053466481333`*^9}, {3.5715054803003683`*^9, 
+   3.5715054963306227`*^9}, {3.5715057684625998`*^9, 
+   3.5715057806297607`*^9}, {3.571511164560479*^9, 3.571511178828771*^9}, {
+   3.571511290213793*^9, 3.5715112995742617`*^9}, {3.571511355278779*^9, 
+   3.5715113571649923`*^9}, 3.57151139825834*^9, {3.571511509837082*^9, 
+   3.571511518811936*^9}, {3.571511659573286*^9, 3.5715117555913477`*^9}, {
+   3.571511790042152*^9, 3.571511821949144*^9}, {3.571511979389765*^9, 
+   3.57151201008305*^9}, 3.571512040803075*^9, {3.571512091567401*^9, 
+   3.5715121054135723`*^9}, {3.5715124492948303`*^9, 3.571512507678404*^9}, {
+   3.571512578443758*^9, 3.571512583600809*^9}, 3.57151262126781*^9, {
+   3.5715127347999887`*^9, 3.571512755031451*^9}, {3.57151278795879*^9, 
+   3.571512806554529*^9}, 3.57151287674996*^9, {3.571515091776305*^9, 
+   3.571515270550355*^9}, {3.571515381627688*^9, 3.571515427491827*^9}, {
+   3.571515506826438*^9, 3.571515530521937*^9}, {3.571515564507471*^9, 
+   3.571515575898245*^9}, {3.571522278804628*^9, 3.571522415553968*^9}, {
+   3.571522455067768*^9, 3.571522662180966*^9}, {3.571522731832788*^9, 
+   3.5715227352149982`*^9}, {3.571522802058642*^9, 3.571522818195243*^9}, {
+   3.5715233603009443`*^9, 3.571523521755025*^9}, {3.571523553052602*^9, 
+   3.571523597076256*^9}, {3.571523634479809*^9, 3.5715236378366213`*^9}, {
+   3.571523688617392*^9, 3.5715237400116177`*^9}, {3.571523800407452*^9, 
+   3.571523812309064*^9}, {3.571523863834096*^9, 3.571523872802609*^9}, {
+   3.571523903404231*^9, 3.57152391005903*^9}, {3.571523944724266*^9, 
+   3.5715239762054977`*^9}, {3.5715240318893957`*^9, 3.571524075634819*^9}, {
+   3.571524111764456*^9, 3.5715241556237392`*^9}, {3.571524195698024*^9, 
+   3.571524219016863*^9}, {3.571524270989299*^9, 3.5715242721632977`*^9}, {
+   3.571524323902392*^9, 3.571524330805936*^9}, 3.571524386130186*^9, {
+   3.571524454965501*^9, 3.571524513374649*^9}, {3.5715246275087547`*^9, 
+   3.571524654100094*^9}, {3.5715247365538263`*^9, 3.571524747696164*^9}, 
+   3.571524823763997*^9, {3.571525010277687*^9, 3.571525061277046*^9}, {
+   3.571525175635879*^9, 3.5715252432049*^9}, {3.5715253588521147`*^9, 
+   3.571525395819357*^9}, {3.571525521202623*^9, 3.571525533306171*^9}, {
+   3.5715255953735867`*^9, 3.571525596924109*^9}, {3.57152602584722*^9, 
+   3.571526035143427*^9}, {3.5715260769924*^9, 3.5715261028566637`*^9}, {
+   3.5715261514840918`*^9, 3.571526186180629*^9}, {3.571526216729615*^9, 
+   3.571526238265623*^9}, {3.5715262762121983`*^9, 3.571526401550015*^9}, {
+   3.571526515604821*^9, 3.571526516562361*^9}, {3.571527222607868*^9, 
+   3.5715272240285387`*^9}, 3.571527286316567*^9, {3.5715274029612722`*^9, 
+   3.571527426215946*^9}, 3.571527561591475*^9, {3.571584498709383*^9, 
+   3.571584510506645*^9}, 3.571779948519931*^9, 3.571780415369429*^9, {
+   3.571780613710643*^9, 3.571780733516029*^9}, {3.57178083961656*^9, 
+   3.5717808526744223`*^9}, {3.571780909029106*^9, 3.571780934802211*^9}, {
+   3.5717810258656597`*^9, 3.5717810294014263`*^9}, {3.5717810594444237`*^9, 
+   3.571781073869897*^9}, {3.57178112053545*^9, 3.5717811207174788`*^9}, {
+   3.5717811586535397`*^9, 3.571781177143772*^9}, {3.571781223553652*^9, 
+   3.57178142080912*^9}, {3.5717815060370913`*^9, 3.571781599200881*^9}, 
+   3.57178164731374*^9, {3.571782259262903*^9, 3.5717822622606287`*^9}, {
+   3.571791212417699*^9, 3.5717912178559723`*^9}, {3.571791340685663*^9, 
+   3.5717913618564863`*^9}, 3.571791417523724*^9, {3.571791725522644*^9, 
+   3.571791744778365*^9}, 3.5717917803238363`*^9, {3.571791849217511*^9, 
+   3.571791850631575*^9}},
+ CellID->1543055076],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Alpha]$$ = 2, $CellContext`\[Beta]$$ = 5, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Alpha]$$], 2}, 0, 5}, {{
+       Hold[$CellContext`\[Beta]$$], 5}, 1, 10}}, Typeset`size$$ = {
+    500., {208., 212.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`\[Alpha]$213523$$ = 
+    0, $CellContext`\[Beta]$213524$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`\[Alpha]$$ = 2, $CellContext`\[Beta]$$ = 
+        5}, "ControllerVariables" :> {
+        Hold[$CellContext`\[Alpha]$$, $CellContext`\[Alpha]$213523$$, 0], 
+        Hold[$CellContext`\[Beta]$$, $CellContext`\[Beta]$213524$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Quiet[
+        Show[
+         Plot[
+          Evaluate[{
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 0], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 1], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 2], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 3], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 4], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 5]}], {$CellContext`x, -4, 4}, PlotStyle -> 
+          Directive[{Thick, Red}], Axes -> False, AxesOrigin -> {0, 0}, 
+          PlotRange -> {-0.1, 6}, AspectRatio -> 0.8, Frame -> True, 
+          FrameLabel -> {
+            Style[$CellContext`x, 16], 
+            Style["energy", 16]}], 
+         Plot[
+          $CellContext`V[$CellContext`\[Alpha]$$, $CellContext`\[Beta]$$, \
+$CellContext`x], {$CellContext`x, -4, 4}, PlotStyle -> {Thick, Black}, 
+          AxesLabel -> {
+            Style["energy", 18], 
+            Style["x", 18, Italic]}, Filling -> Axis, FillingStyle -> White], 
+         Graphics[{
+           Text[
+            Style[
+             TraditionalForm[
+              $CellContext`V[$CellContext`x]], 16], {-3.5, 4}], Red, 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 0], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 0], {4, 3}]}], 12], {
+            1, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 0] - 0.175}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 1], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 1], {4, 3}]}], 12], {
+            1, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 1] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 2], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 2], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 2] - 0.175}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 3], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 3], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 3] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 4], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 4], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 4] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 5], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 5], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 5] + 0.15}]}], ImageSize -> 500]], 
+      "Specifications" :> {{{$CellContext`\[Alpha]$$, 2}, 0, 5, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Beta]$$, 5}, 1, 10, Appearance -> 
+         "Labeled"}}, 
+      "Options" :> {
+       TrackedSymbols :> {$CellContext`\[Alpha]$$, $CellContext`\[Beta]$$}, 
+        ContinuousAction -> False}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{549., {268., 273.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>(($CellContext`V[
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]]] := (1/2) $CellContext`x^2 + $CellContext`\[Alpha] 
+         E^((-$CellContext`\[Beta]) $CellContext`x^2); $CellContext`\[Phi][
+         Pattern[$CellContext`n, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          
+          Blank[]]] := (((2^$CellContext`n Factorial[$CellContext`n]) 
+           Pi^Rational[1, 2])^((-1)/2) 
+         HermiteH[$CellContext`n, $CellContext`x]) 
+        E^((-$CellContext`x^2)/2); $CellContext`v[
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`i, 
+          Blank[]], 
+         Pattern[$CellContext`j, 
+          Blank[]]] := If[OddQ[$CellContext`i + $CellContext`j] == True, 0, 
+         NIntegrate[(($CellContext`\[Phi][$CellContext`i, $CellContext`x] \
+$CellContext`\[Alpha]) 
+           E^((-$CellContext`\[Beta]) $CellContext`x^2)) \
+$CellContext`\[Phi][$CellContext`j, $CellContext`x], {$CellContext`x, -
+           Infinity, Infinity}, AccuracyGoal -> 3]]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 0] := 
+       1/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], 0, 
+          0] + Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta],
+              0, $CellContext`k]^2/(-$CellContext`k), {$CellContext`k, 2, 8, 
+           2}]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 1] := 
+       3/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], 1, 
+          1] + Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta],
+              1, $CellContext`k]^2/(
+          1 - $CellContext`k), {$CellContext`k, 3, 7, 
+           2}]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`n, 
+          Blank[]]] := $CellContext`n + 
+        1/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`n] + 
+        Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`k]^2/($CellContext`n - $CellContext`k), \
+{$CellContext`k, 0, $CellContext`n - 2}] + 
+        Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`k]^2/($CellContext`n - $CellContext`k), \
+{$CellContext`k, $CellContext`n + 2, 8}]; Null); Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->926367808]
+}, {2}]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ManipulateCaptionSection"],
+
+Cell[TextData[{
+ "A variant of a double-well potential is a harmonic oscillator perturbed by \
+a Gaussian, represented by the potential ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"V", "(", "x", ")"}], "=", " ", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", "2"], "k", " ", 
+      SuperscriptBox["x", "2"]}], "+", 
+     RowBox[{"\[Alpha]", " ", 
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{"-", "\[Beta]"}], " ", 
+        SuperscriptBox["x", "2"]}]]}]}]}], TraditionalForm]], "InlineMath"],
+ ". A similar function was used to model the inversion of the ammonia \
+molecule [1]. The problem can be treated very efficiently using second-order \
+perturbation theory based on the unperturbed harmonic oscillator. The first \
+six energy levels are computed here."
+}], "ManipulateCaption",
+ CellChangeTimes->{{3.5715130310222197`*^9, 3.5715131822339067`*^9}, {
+  3.571514563322709*^9, 3.571514923832225*^9}, {3.571514966106393*^9, 
+  3.571514995290975*^9}, {3.571527844228252*^9, 3.5715281068055677`*^9}, {
+  3.571528167146346*^9, 3.571528167150715*^9}, {3.57153086942356*^9, 
+  3.571530876720875*^9}, {3.571580481933814*^9, 3.571580512501841*^9}, {
+  3.5715872893731313`*^9, 3.571587291404334*^9}, {3.5715873772969227`*^9, 
+  3.5715873993771305`*^9}, {3.571782326796534*^9, 3.571782327491089*^9}, {
+  3.571791264492271*^9, 3.5717912699307623`*^9}},
+ CellID->1415843384],
+
+Cell[TextData[{
+ "The unperturbed Hamiltonian is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["H", 
+     RowBox[{"(", "0", ")"}]], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        SuperscriptBox["\[HBar]", "2"], 
+        RowBox[{"2", "\[Mu]"}]]}], 
+      FractionBox[
+       SuperscriptBox["d", "2"], 
+       RowBox[{"d", "\[InvisibleSpace]", 
+        SuperscriptBox["x", "2"]}]]}], "+", 
+     RowBox[{
+      FractionBox["1", "2"], " ", "k", " ", 
+      SuperscriptBox["x", "2"]}]}]}], TraditionalForm]], "InlineMath"],
+ ". For convenience, we set ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[HBar]", "=", 
+    RowBox[{"\[Mu]", "=", 
+     RowBox[{"k", "=", "1"}]}]}], TraditionalForm]], "InlineMath"],
+ ". The unperturbed eigenfunctions are given by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Phi]", "n"], "(", "x", ")"}], "=", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["2", "n"], 
+        RowBox[{"n", "!"}], 
+        SqrtBox["\[Pi]"]}], ")"}], 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", "2"}]], 
+     RowBox[{
+      SubscriptBox["H", "n"], "(", "x", ")"}], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox["x", "2"]}], "/", "2"}]]}]}], TraditionalForm]], 
+  "InlineMath"],
+ ", where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["H", "n"], "(", "x", ")"}], TraditionalForm]], "InlineMath"],
+ " are Hermite polynomials. The unperturbed eigenvalues are then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubsuperscriptBox["E", "n", 
+      RowBox[{"(", "0", ")"}]], "=", 
+     RowBox[{"n", "+", 
+      FractionBox["1", "2"]}]}], ",", 
+    RowBox[{"n", "=", "0"}], ",", "1", ",", "2", ",", "\[Ellipsis]"}], 
+   TraditionalForm]], "InlineMath"],
+ ". The perturbation is the Gaussian function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["H", 
+     RowBox[{"(", "1", ")"}]], "=", 
+    RowBox[{"\[Beta]", " ", 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "\[Alpha]"}], " ", 
+       SuperscriptBox["x", "2"]}]]}]}], TraditionalForm]], "InlineMath"],
+ ". To second-order in perturbation theory, we have ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "n"], "=", 
+    RowBox[{
+     SubsuperscriptBox["E", "n", 
+      RowBox[{"(", "0", ")"}]], "+", 
+     SubsuperscriptBox["H", 
+      RowBox[{"n", ",", "n"}], 
+      RowBox[{"(", "1", ")"}]], "+", 
+     RowBox[{
+      UnderoverscriptBox["\[Sum]", 
+       RowBox[{
+        RowBox[{"k", "\[NotEqual]", "n"}], "=", "0"}], "\[Infinity]"], 
+      FractionBox[
+       RowBox[{
+        SubsuperscriptBox["H", 
+         RowBox[{"n", ",", "k"}], 
+         RowBox[{"(", "1", ")"}]], 
+        SubsuperscriptBox["H", 
+         RowBox[{"k", ",", "n"}], 
+         RowBox[{"(", "1", ")"}]]}], 
+       RowBox[{
+        SubsuperscriptBox["E", "n", 
+         RowBox[{"(", "0", ")"}]], "-", 
+        SubsuperscriptBox["E", "k", 
+         RowBox[{"(", "0", ")"}]]}]]}]}]}], TraditionalForm]], "InlineMath"],
+ ". (In practice, the sum is truncated at some ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "max"], TraditionalForm]], "InlineMath"],
+ ")."
+}], "ManipulateCaption",
+ CellChangeTimes->{{3.5715130310222197`*^9, 3.5715131822339067`*^9}, {
+   3.571514563322709*^9, 3.571514923832225*^9}, {3.571514966106393*^9, 
+   3.571514995290975*^9}, {3.571527844228252*^9, 3.5715281068055677`*^9}, {
+   3.571528167146346*^9, 3.571528929207019*^9}, {3.571528959304799*^9, 
+   3.5715289676108227`*^9}, {3.571529007251067*^9, 3.571529112710825*^9}, {
+   3.571529149195965*^9, 3.5715292512971373`*^9}, {3.5715292985776*^9, 
+   3.571529412510301*^9}, {3.571529443968985*^9, 3.571529597147148*^9}, {
+   3.571529639647539*^9, 3.571529700465351*^9}, {3.5715802756543827`*^9, 
+   3.5715804665067368`*^9}, {3.5715874166108537`*^9, 
+   3.5715874737385654`*^9}, {3.5717824672709923`*^9, 
+   3.5717824672712297`*^9}, {3.571782517157152*^9, 3.5717825695587397`*^9}, 
+   3.5739050320848093`*^9, {3.573905068619463*^9, 3.573905093145915*^9}},
+ CellID->1647410395],
+
+Cell[TextData[{
+ "When ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Alpha]", "=", "0"}], TraditionalForm]], "InlineMath"],
+ ", the perturbation reduces to zero and the system reverts to a simple \
+harmonic oscillator. As the central barrier becomes wider, the lower \
+eigenvalues (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "0"}], TraditionalForm]], "InlineMath"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "1"}], TraditionalForm]], "InlineMath"],
+ "; also ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "2"}], TraditionalForm]], "InlineMath"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "3"}], TraditionalForm]], "InlineMath"],
+ ") approach degenerate pairs. The situation becomes similar to tunneling, \
+giving two eigenstates of opposite parity, with their linear combinations \
+approximating localized states."
+}], "ManipulateCaption",
+ CellChangeTimes->{{3.5715130310222197`*^9, 3.5715131822339067`*^9}, {
+   3.571514563322709*^9, 3.571514923832225*^9}, {3.571514966106393*^9, 
+   3.571514995290975*^9}, {3.571527844228252*^9, 3.5715281068055677`*^9}, {
+   3.571528167146346*^9, 3.571528909662236*^9}, {3.571530837032014*^9, 
+   3.5715308577149973`*^9}, {3.571530897881547*^9, 3.571530982547215*^9}, {
+   3.571580572358911*^9, 3.571580576486665*^9}, {3.571580635728326*^9, 
+   3.571580795970951*^9}, {3.571580841201675*^9, 3.571580841657823*^9}, {
+   3.571581171537781*^9, 3.5715812056001453`*^9}, {3.571581236884152*^9, 
+   3.5715813267008047`*^9}, {3.571581378695115*^9, 3.5715814679546824`*^9}, {
+   3.571581542078083*^9, 3.5715815437257853`*^9}, 3.5715875572829194`*^9, {
+   3.5717825864566*^9, 3.571782638073887*^9}, 3.5739051068042808`*^9},
+ CellID->519847994]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ThumbnailSection"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Alpha]$$ = 2, $CellContext`\[Beta]$$ = 5, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Alpha]$$], 2}, 0, 5}, {{
+       Hold[$CellContext`\[Beta]$$], 5}, 1, 10}}, Typeset`size$$ = {
+    500., {208., 212.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`\[Alpha]$213578$$ = 
+    0, $CellContext`\[Beta]$213579$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`\[Alpha]$$ = 2, $CellContext`\[Beta]$$ = 
+        5}, "ControllerVariables" :> {
+        Hold[$CellContext`\[Alpha]$$, $CellContext`\[Alpha]$213578$$, 0], 
+        Hold[$CellContext`\[Beta]$$, $CellContext`\[Beta]$213579$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Quiet[
+        Show[
+         Plot[
+          Evaluate[{
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 0], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 1], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 2], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 3], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 4], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 5]}], {$CellContext`x, -4, 4}, PlotStyle -> 
+          Directive[{Thick, Red}], Axes -> False, AxesOrigin -> {0, 0}, 
+          PlotRange -> {-0.1, 6}, AspectRatio -> 0.8, Frame -> True, 
+          FrameLabel -> {
+            Style[$CellContext`x, 16], 
+            Style["energy", 16]}], 
+         Plot[
+          $CellContext`V[$CellContext`\[Alpha]$$, $CellContext`\[Beta]$$, \
+$CellContext`x], {$CellContext`x, -4, 4}, PlotStyle -> {Thick, Black}, 
+          AxesLabel -> {
+            Style["energy", 18], 
+            Style["x", 18, Italic]}, Filling -> Axis, FillingStyle -> White], 
+         Graphics[{
+           Text[
+            Style[
+             TraditionalForm[
+              $CellContext`V[$CellContext`x]], 16], {-3.5, 4}], Red, 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 0], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 0], {4, 3}]}], 12], {
+            1, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 0] - 0.175}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 1], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 1], {4, 3}]}], 12], {
+            1, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 1] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 2], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 2], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 2] - 0.175}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 3], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 3], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 3] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 4], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 4], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 4] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 5], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 5], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 5] + 0.15}]}], ImageSize -> 500]], 
+      "Specifications" :> {{{$CellContext`\[Alpha]$$, 2}, 0, 5, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Beta]$$, 5}, 1, 10, Appearance -> 
+         "Labeled"}}, 
+      "Options" :> {
+       TrackedSymbols :> {$CellContext`\[Alpha]$$, $CellContext`\[Beta]$$}, 
+        ContinuousAction -> False}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{549., {268., 273.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>(($CellContext`V[
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]]] := (1/2) $CellContext`x^2 + $CellContext`\[Alpha] 
+         E^((-$CellContext`\[Beta]) $CellContext`x^2); $CellContext`\[Phi][
+         Pattern[$CellContext`n, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          
+          Blank[]]] := (((2^$CellContext`n Factorial[$CellContext`n]) 
+           Pi^Rational[1, 2])^((-1)/2) 
+         HermiteH[$CellContext`n, $CellContext`x]) 
+        E^((-$CellContext`x^2)/2); $CellContext`v[
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`i, 
+          Blank[]], 
+         Pattern[$CellContext`j, 
+          Blank[]]] := If[OddQ[$CellContext`i + $CellContext`j] == True, 0, 
+         NIntegrate[(($CellContext`\[Phi][$CellContext`i, $CellContext`x] \
+$CellContext`\[Alpha]) 
+           E^((-$CellContext`\[Beta]) $CellContext`x^2)) \
+$CellContext`\[Phi][$CellContext`j, $CellContext`x], {$CellContext`x, -
+           Infinity, Infinity}, AccuracyGoal -> 3]]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 0] := 
+       1/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], 0, 
+          0] + Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta],
+              0, $CellContext`k]^2/(-$CellContext`k), {$CellContext`k, 2, 8, 
+           2}]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 1] := 
+       3/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], 1, 
+          1] + Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta],
+              1, $CellContext`k]^2/(
+          1 - $CellContext`k), {$CellContext`k, 3, 7, 
+           2}]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`n, 
+          Blank[]]] := $CellContext`n + 
+        1/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`n] + 
+        Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`k]^2/($CellContext`n - $CellContext`k), \
+{$CellContext`k, 0, $CellContext`n - 2}] + 
+        Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`k]^2/($CellContext`n - $CellContext`k), \
+{$CellContext`k, $CellContext`n + 2, 8}]; Null); Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->207308306]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SnapshotsSection"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Alpha]$$ = 0., $CellContext`\[Beta]$$ = 5,
+     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Alpha]$$], 0.}, 0, 5}, {{
+       Hold[$CellContext`\[Beta]$$], 5}, 1, 10}}, Typeset`size$$ = {
+    500., {208., 212.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`\[Alpha]$213633$$ = 
+    0, $CellContext`\[Beta]$213634$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`\[Alpha]$$ = 0., $CellContext`\[Beta]$$ = 
+        5}, "ControllerVariables" :> {
+        Hold[$CellContext`\[Alpha]$$, $CellContext`\[Alpha]$213633$$, 0], 
+        Hold[$CellContext`\[Beta]$$, $CellContext`\[Beta]$213634$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Quiet[
+        Show[
+         Plot[
+          Evaluate[{
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 0], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 1], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 2], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 3], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 4], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 5]}], {$CellContext`x, -4, 4}, PlotStyle -> 
+          Directive[{Thick, Red}], Axes -> False, AxesOrigin -> {0, 0}, 
+          PlotRange -> {-0.1, 6}, AspectRatio -> 0.8, Frame -> True, 
+          FrameLabel -> {
+            Style[$CellContext`x, 16], 
+            Style["energy", 16]}], 
+         Plot[
+          $CellContext`V[$CellContext`\[Alpha]$$, $CellContext`\[Beta]$$, \
+$CellContext`x], {$CellContext`x, -4, 4}, PlotStyle -> {Thick, Black}, 
+          AxesLabel -> {
+            Style["energy", 18], 
+            Style["x", 18, Italic]}, Filling -> Axis, FillingStyle -> White], 
+         Graphics[{
+           Text[
+            Style[
+             TraditionalForm[
+              $CellContext`V[$CellContext`x]], 16], {-3.5, 4}], Red, 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 0], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 0], {4, 3}]}], 12], {
+            1, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 0] - 0.175}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 1], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 1], {4, 3}]}], 12], {
+            1, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 1] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 2], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 2], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 2] - 0.175}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 3], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 3], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 3] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 4], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 4], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 4] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 5], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 5], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 5] + 0.15}]}], ImageSize -> 500]], 
+      "Specifications" :> {{{$CellContext`\[Alpha]$$, 0.}, 0, 5, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Beta]$$, 5}, 1, 10, Appearance -> 
+         "Labeled"}}, 
+      "Options" :> {
+       TrackedSymbols :> {$CellContext`\[Alpha]$$, $CellContext`\[Beta]$$}, 
+        ContinuousAction -> False}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{549., {268., 273.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>(($CellContext`V[
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]]] := (1/2) $CellContext`x^2 + $CellContext`\[Alpha] 
+         E^((-$CellContext`\[Beta]) $CellContext`x^2); $CellContext`\[Phi][
+         Pattern[$CellContext`n, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          
+          Blank[]]] := (((2^$CellContext`n Factorial[$CellContext`n]) 
+           Pi^Rational[1, 2])^((-1)/2) 
+         HermiteH[$CellContext`n, $CellContext`x]) 
+        E^((-$CellContext`x^2)/2); $CellContext`v[
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`i, 
+          Blank[]], 
+         Pattern[$CellContext`j, 
+          Blank[]]] := If[OddQ[$CellContext`i + $CellContext`j] == True, 0, 
+         NIntegrate[(($CellContext`\[Phi][$CellContext`i, $CellContext`x] \
+$CellContext`\[Alpha]) 
+           E^((-$CellContext`\[Beta]) $CellContext`x^2)) \
+$CellContext`\[Phi][$CellContext`j, $CellContext`x], {$CellContext`x, -
+           Infinity, Infinity}, AccuracyGoal -> 3]]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 0] := 
+       1/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], 0, 
+          0] + Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta],
+              0, $CellContext`k]^2/(-$CellContext`k), {$CellContext`k, 2, 8, 
+           2}]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 1] := 
+       3/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], 1, 
+          1] + Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta],
+              1, $CellContext`k]^2/(
+          1 - $CellContext`k), {$CellContext`k, 3, 7, 
+           2}]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`n, 
+          Blank[]]] := $CellContext`n + 
+        1/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`n] + 
+        Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`k]^2/($CellContext`n - $CellContext`k), \
+{$CellContext`k, 0, $CellContext`n - 2}] + 
+        Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`k]^2/($CellContext`n - $CellContext`k), \
+{$CellContext`k, $CellContext`n + 2, 8}]; Null); Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->1012223508],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Alpha]$$ = 2, $CellContext`\[Beta]$$ = 5, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Alpha]$$], 2}, 0, 5}, {{
+       Hold[$CellContext`\[Beta]$$], 5}, 1, 10}}, Typeset`size$$ = {
+    500., {208., 212.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`\[Alpha]$213688$$ = 
+    0, $CellContext`\[Beta]$213689$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`\[Alpha]$$ = 2, $CellContext`\[Beta]$$ = 
+        5}, "ControllerVariables" :> {
+        Hold[$CellContext`\[Alpha]$$, $CellContext`\[Alpha]$213688$$, 0], 
+        Hold[$CellContext`\[Beta]$$, $CellContext`\[Beta]$213689$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Quiet[
+        Show[
+         Plot[
+          Evaluate[{
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 0], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 1], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 2], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 3], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 4], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 5]}], {$CellContext`x, -4, 4}, PlotStyle -> 
+          Directive[{Thick, Red}], Axes -> False, AxesOrigin -> {0, 0}, 
+          PlotRange -> {-0.1, 6}, AspectRatio -> 0.8, Frame -> True, 
+          FrameLabel -> {
+            Style[$CellContext`x, 16], 
+            Style["energy", 16]}], 
+         Plot[
+          $CellContext`V[$CellContext`\[Alpha]$$, $CellContext`\[Beta]$$, \
+$CellContext`x], {$CellContext`x, -4, 4}, PlotStyle -> {Thick, Black}, 
+          AxesLabel -> {
+            Style["energy", 18], 
+            Style["x", 18, Italic]}, Filling -> Axis, FillingStyle -> White], 
+         Graphics[{
+           Text[
+            Style[
+             TraditionalForm[
+              $CellContext`V[$CellContext`x]], 16], {-3.5, 4}], Red, 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 0], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 0], {4, 3}]}], 12], {
+            1, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 0] - 0.175}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 1], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 1], {4, 3}]}], 12], {
+            1, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 1] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 2], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 2], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 2] - 0.175}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 3], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 3], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 3] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 4], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 4], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 4] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 5], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 5], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 5] + 0.15}]}], ImageSize -> 500]], 
+      "Specifications" :> {{{$CellContext`\[Alpha]$$, 2}, 0, 5, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Beta]$$, 5}, 1, 10, Appearance -> 
+         "Labeled"}}, 
+      "Options" :> {
+       TrackedSymbols :> {$CellContext`\[Alpha]$$, $CellContext`\[Beta]$$}, 
+        ContinuousAction -> False}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{549., {268., 273.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>(($CellContext`V[
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]]] := (1/2) $CellContext`x^2 + $CellContext`\[Alpha] 
+         E^((-$CellContext`\[Beta]) $CellContext`x^2); $CellContext`\[Phi][
+         Pattern[$CellContext`n, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          
+          Blank[]]] := (((2^$CellContext`n Factorial[$CellContext`n]) 
+           Pi^Rational[1, 2])^((-1)/2) 
+         HermiteH[$CellContext`n, $CellContext`x]) 
+        E^((-$CellContext`x^2)/2); $CellContext`v[
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`i, 
+          Blank[]], 
+         Pattern[$CellContext`j, 
+          Blank[]]] := If[OddQ[$CellContext`i + $CellContext`j] == True, 0, 
+         NIntegrate[(($CellContext`\[Phi][$CellContext`i, $CellContext`x] \
+$CellContext`\[Alpha]) 
+           E^((-$CellContext`\[Beta]) $CellContext`x^2)) \
+$CellContext`\[Phi][$CellContext`j, $CellContext`x], {$CellContext`x, -
+           Infinity, Infinity}, AccuracyGoal -> 3]]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 0] := 
+       1/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], 0, 
+          0] + Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta],
+              0, $CellContext`k]^2/(-$CellContext`k), {$CellContext`k, 2, 8, 
+           2}]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 1] := 
+       3/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], 1, 
+          1] + Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta],
+              1, $CellContext`k]^2/(
+          1 - $CellContext`k), {$CellContext`k, 3, 7, 
+           2}]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`n, 
+          Blank[]]] := $CellContext`n + 
+        1/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`n] + 
+        Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`k]^2/($CellContext`n - $CellContext`k), \
+{$CellContext`k, 0, $CellContext`n - 2}] + 
+        Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`k]^2/($CellContext`n - $CellContext`k), \
+{$CellContext`k, $CellContext`n + 2, 8}]; Null); Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->75047422],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Alpha]$$ = 5., $CellContext`\[Beta]$$ = 8,
+     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Alpha]$$], 5.}, 0, 5}, {{
+       Hold[$CellContext`\[Beta]$$], 8}, 1, 10}}, Typeset`size$$ = {
+    500., {208., 212.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`\[Alpha]$213743$$ = 
+    0, $CellContext`\[Beta]$213744$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`\[Alpha]$$ = 5., $CellContext`\[Beta]$$ = 
+        8}, "ControllerVariables" :> {
+        Hold[$CellContext`\[Alpha]$$, $CellContext`\[Alpha]$213743$$, 0], 
+        Hold[$CellContext`\[Beta]$$, $CellContext`\[Beta]$213744$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Quiet[
+        Show[
+         Plot[
+          Evaluate[{
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 0], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 1], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 2], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 3], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 4], 
+            $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 5]}], {$CellContext`x, -4, 4}, PlotStyle -> 
+          Directive[{Thick, Red}], Axes -> False, AxesOrigin -> {0, 0}, 
+          PlotRange -> {-0.1, 6}, AspectRatio -> 0.8, Frame -> True, 
+          FrameLabel -> {
+            Style[$CellContext`x, 16], 
+            Style["energy", 16]}], 
+         Plot[
+          $CellContext`V[$CellContext`\[Alpha]$$, $CellContext`\[Beta]$$, \
+$CellContext`x], {$CellContext`x, -4, 4}, PlotStyle -> {Thick, Black}, 
+          AxesLabel -> {
+            Style["energy", 18], 
+            Style["x", 18, Italic]}, Filling -> Axis, FillingStyle -> White], 
+         Graphics[{
+           Text[
+            Style[
+             TraditionalForm[
+              $CellContext`V[$CellContext`x]], 16], {-3.5, 4}], Red, 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 0], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 0], {4, 3}]}], 12], {
+            1, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 0] - 0.175}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 1], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 1], {4, 3}]}], 12], {
+            1, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, $CellContext`\
+\[Beta]$$, 1] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 2], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 2], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 2] - 0.175}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 3], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 3], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 3] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 4], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 4], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 4] + 0.15}], 
+           Text[
+            Style[
+             Row[{
+               Subscript[
+                Style["E", Italic], 5], " = ", 
+               NumberForm[
+                $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 5], {4, 3}]}], 12], {
+            1.25, $CellContext`\[Epsilon][$CellContext`\[Alpha]$$, \
+$CellContext`\[Beta]$$, 5] + 0.15}]}], ImageSize -> 500]], 
+      "Specifications" :> {{{$CellContext`\[Alpha]$$, 5.}, 0, 5, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Beta]$$, 8}, 1, 10, Appearance -> 
+         "Labeled"}}, 
+      "Options" :> {
+       TrackedSymbols :> {$CellContext`\[Alpha]$$, $CellContext`\[Beta]$$}, 
+        ContinuousAction -> False}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{549., {268., 273.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>(($CellContext`V[
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]]] := (1/2) $CellContext`x^2 + $CellContext`\[Alpha] 
+         E^((-$CellContext`\[Beta]) $CellContext`x^2); $CellContext`\[Phi][
+         Pattern[$CellContext`n, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          
+          Blank[]]] := (((2^$CellContext`n Factorial[$CellContext`n]) 
+           Pi^Rational[1, 2])^((-1)/2) 
+         HermiteH[$CellContext`n, $CellContext`x]) 
+        E^((-$CellContext`x^2)/2); $CellContext`v[
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`i, 
+          Blank[]], 
+         Pattern[$CellContext`j, 
+          Blank[]]] := If[OddQ[$CellContext`i + $CellContext`j] == True, 0, 
+         NIntegrate[(($CellContext`\[Phi][$CellContext`i, $CellContext`x] \
+$CellContext`\[Alpha]) 
+           E^((-$CellContext`\[Beta]) $CellContext`x^2)) \
+$CellContext`\[Phi][$CellContext`j, $CellContext`x], {$CellContext`x, -
+           Infinity, Infinity}, AccuracyGoal -> 3]]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 0] := 
+       1/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], 0, 
+          0] + Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta],
+              0, $CellContext`k]^2/(-$CellContext`k), {$CellContext`k, 2, 8, 
+           2}]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 1] := 
+       3/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], 1, 
+          1] + Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta],
+              1, $CellContext`k]^2/(
+          1 - $CellContext`k), {$CellContext`k, 3, 7, 
+           2}]; $CellContext`\[Epsilon][
+         Pattern[$CellContext`\[Alpha], 
+          Blank[]], 
+         Pattern[$CellContext`\[Beta], 
+          Blank[]], 
+         Pattern[$CellContext`n, 
+          Blank[]]] := $CellContext`n + 
+        1/2 + $CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`n] + 
+        Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`k]^2/($CellContext`n - $CellContext`k), \
+{$CellContext`k, 0, $CellContext`n - 2}] + 
+        Sum[$CellContext`v[$CellContext`\[Alpha], $CellContext`\[Beta], \
+$CellContext`n, $CellContext`k]^2/($CellContext`n - $CellContext`k), \
+{$CellContext`k, $CellContext`n + 2, 8}]; Null); Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->749120765]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "DetailsSection"],
+
+Cell[TextData[{
+ "Snapshot 1: with perturbation turned off, simple harmonic oscillator with \
+energy levels ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "n"], "=", 
+    RowBox[{"n", "+", 
+     FractionBox["1", "2"]}]}], TraditionalForm]], "InlineMath"]
+}], "DetailNotes",
+ CellChangeTimes->{{3.571583360280079*^9, 3.5715835047032833`*^9}},
+ CellID->558407852],
+
+Cell[TextData[{
+ "Snapshot 2: relatively small perturbation, showing convergence of levels ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "0"}], TraditionalForm]], "InlineMath"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "1"}], TraditionalForm]], "InlineMath"]
+}], "DetailNotes",
+ CellChangeTimes->{{3.571583360280079*^9, 3.571583385809387*^9}, {
+  3.571583526517674*^9, 3.5715835818324842`*^9}, {3.571583960584716*^9, 
+  3.571583985718506*^9}},
+ CellID->657231174],
+
+Cell["\<\
+Snapshot 3: larger perturbation showing approach to degeneracy of two pairs \
+of levels\
+\>", "DetailNotes",
+ CellChangeTimes->{{3.571583360280079*^9, 3.571583389664135*^9}, {
+  3.5715839922803173`*^9, 3.5715840373062973`*^9}, {3.5715875229344845`*^9, 
+  3.57158752368756*^9}},
+ CellID->1575944897],
+
+Cell["References", "DetailNotes",
+ CellChangeTimes->{{3.571581878107718*^9, 3.5715818824753513`*^9}, {
+   3.571581977224452*^9, 3.5715819772262278`*^9}, 3.571583352392028*^9, 
+   3.5715873134205356`*^9},
+ CellID->1369317007],
+
+Cell[TextData[{
+ "[1] J. D. Swalen and J. A. Ibers, \"Potential Function for the Inversion of \
+Ammonia,\" ",
+ StyleBox["Journal of Chemical Physics,",
+  FontSlant->"Italic"],
+ " ",
+ StyleBox["36",
+  FontWeight->"Bold"],
+ "(7), 1962 pp. 1914\[Dash]1918. doi:",
+ ButtonBox["10.1063/1.1701290",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://dx.doi.org/10.1063/1.1701290"], None},
+  ButtonNote->"http://dx.doi.org/10.1063/1.1701290"],
+ "."
+}], "DetailNotes",
+ CellChangeTimes->{{3.5715873037405677`*^9, 3.571587310205214*^9}, {
+  3.571782689836194*^9, 3.571782695818283*^9}, {3.5717838164835157`*^9, 
+  3.571783825393784*^9}, {3.571783871549028*^9, 3.571783910533266*^9}, {
+  3.571783959977512*^9, 3.571783988688487*^9}, {3.573905149449545*^9, 
+  3.5739051496755676`*^9}, {3.573905277762375*^9, 3.573905319859584*^9}},
+ CellID->335412935],
+
+Cell[TextData[{
+ "[2] K. T. Hecht, ",
+ StyleBox["Quantum Mechanics",
+  FontSlant->"Italic"],
+ ", New York: Springer-Verlag, 2000 pp. 365\[Dash]368."
+}], "DetailNotes",
+ CellChangeTimes->{{3.571581878107718*^9, 3.5715818824753513`*^9}, {
+   3.571581977224452*^9, 3.571581979327526*^9}, {3.571582103364183*^9, 
+   3.5715821861995487`*^9}, {3.571582223113078*^9, 3.571582316740988*^9}, {
+   3.571587317633957*^9, 3.571587324913685*^9}, {3.571782705864833*^9, 
+   3.571782707439633*^9}, 3.5739053776883664`*^9},
+ CellID->789416033],
+
+Cell[TextData[{
+ "[3] Wikipedia. \"Perturbation Theory (Quantum Mechanics).\" (Mar 11, 2013) ",
+ ButtonBox["en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://en.wikipedia.org/wiki/Perturbation_theory_%28quantum_\
+mechanics%29"], None},
+  ButtonNote->
+   "http://en.wikipedia.org/wiki/Perturbation_theory_%28quantum_mechanics%29"],
+ "."
+}], "DetailNotes",
+ CellChangeTimes->{{3.571581891139802*^9, 3.571581901124187*^9}, {
+  3.571581936580758*^9, 3.571581936598768*^9}, {3.57158733596879*^9, 
+  3.5715873394221354`*^9}, {3.5739054250140986`*^9, 3.5739055426768637`*^9}},
+ CellID->60645955]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ControlSuggestionsSection"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Resize Images"]}],
+  "\"Click inside an image to reveal its orange resize frame.\\nDrag any of \
+the orange resize handles to resize the image.\"",
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.571782712870714*^9},
+ FontFamily->"Verdana",
+ CellTags->"ResizeImages"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Rotate and Zoom in 3D"]}],
+  RowBox[{
+   "\"Drag a 3D graphic to rotate it. Starting the drag near the center \
+tumbles\\nthe graphic; starting near a corner turns it parallel to the plane \
+of the screen.\\nHold down \"", 
+    FrameBox[
+    "Ctrl", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" (or \"", 
+    FrameBox[
+    "Cmd", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" on Mac) and drag up and down to zoom.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"RotateAndZoomIn3D"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Drag Locators"]}],
+  RowBox[{"\"Drag any locator (\"", 
+    GraphicsBox[
+     LocatorBox[
+      Scaled[{0.5, 0.5}]], ImageSize -> 20], 
+    "\", etc.) to move it around.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"DragLocators"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Create and Delete Locators"]}],
+  RowBox[{"\"Insert a new locator in the graphic by holding down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], 
+    "\" key\\nand clicking where you want it to be. Delete a locator by \
+clicking it\\nwhile holding down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" key.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"CreateAndDeleteLocators"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Slider Zoom"]}],
+  RowBox[{"\"Hold down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], 
+    "\" key while moving a slider to make fine adjustments in the slider \
+value.\\nHold \"", 
+    FrameBox[
+    "Ctrl", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" and/or \"", 
+    FrameBox[
+    "Shift", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" at the same time as \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" to make ever finer adjustments.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.5715875362808194`*^9},
+ FontFamily->"Verdana",
+ CellTags->"SliderZoom"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Gamepad Controls"]}],
+  "\"Control this Demonstration with a gamepad or other\\nhuman interface \
+device connected to your computer.\"",
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.35696210375764*^9, 3.3895522232313623`*^9, 
+  3.5717827105080976`*^9},
+ FontFamily->"Verdana",
+ CellTags->"GamepadControls"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Automatic Animation"]}],
+  RowBox[{"\"Animate a slider in this Demonstration by clicking the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJzzTSzJSM1NLMlMTlRwL0osyMhMLlZwyy8CCjEzMjAwcIKwAgOI/R/IhBKc\n\
+/4EAyGAG0f+nTZsGwgysIJIRKsWKLAXGIHFmEpUgLADxWUAkI24jZs+eTaEt\n\
+IG+wQKRmzJgBlYf5lhEA30OqWA=="], "Graphics", ImageSize -> {9, 9}, ImageMargins -> 
+      0, CellBaseline -> Baseline], BoxBaselineShift -> 0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"button\\nnext to the slider, and then clicking the play button that \
+appears.\\nAnimate all controls by selecting \"", 
+    StyleBox["Autorun", FontWeight -> "Bold"], "\" from the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJyNULENwyAQfEySIlMwTVJlCGRFsosokeNtqBmDBagoaZjAI1C8/8GUUUC6\n\
+57h7cQ8PvU7Pl17nUav7oj/TPH7V7b2QJAUAXBkKmCPRowxICy64bRvGGNF7\n\
+X8CctGoDSN4xhIDGGDhzFXwUh3/ClBKrDQPmnGXtI6u0OOd+tZBVUqy1xSaH\n\
+UqiK6pPe4XdEdAz6563tx/gejuORGMxJaz8mdpJn7hc="], "Graphics", 
+      ImageSize -> {10, 10}, ImageMargins -> 0, CellBaseline -> Baseline], 
+     BoxBaselineShift -> 0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"menu.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.571782711295032*^9},
+ FontFamily->"Verdana",
+ CellTags->"AutomaticAnimation"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Bookmark Animation"]}],
+  RowBox[{
+   "\"See a prepared animation of this Demonstration by selecting\\n\"", 
+    StyleBox["Animate Bookmarks", FontWeight -> "Bold"], "\" from the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJyNULENwyAQfEySIlMwTVJlCGRFsosokeNtqBmDBagoaZjAI1C8/8GUUUC6\n\
+57h7cQ8PvU7Pl17nUav7oj/TPH7V7b2QJAUAXBkKmCPRowxICy64bRvGGNF7\n\
+X8CctGoDSN4xhIDGGDhzFXwUh3/ClBKrDQPmnGXtI6u0OOd+tZBVUqy1xSaH\n\
+UqiK6pPe4XdEdAz6563tx/gejuORGMxJaz8mdpJn7hc="], "Graphics", 
+      ImageSize -> {10, 10}, ImageMargins -> 0, CellBaseline -> Baseline], 
+     BoxBaselineShift -> 0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"menu.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"BookmarkAnimation"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SearchTermsSection"],
+
+Cell["quantum mechanics", "SearchTerms",
+ CellChangeTimes->{{3.571581615949849*^9, 3.571581626680914*^9}},
+ CellID->647298721],
+
+Cell["double-well potential", "SearchTerms",
+ CellChangeTimes->{{3.571581594706979*^9, 3.5715816115202293`*^9}},
+ CellID->1121759162],
+
+Cell["perturbation theory", "SearchTerms",
+ CellChangeTimes->{{3.571581632401024*^9, 3.571581640161635*^9}},
+ CellID->2144931792]
+}, Open  ]],
+
+Cell["", "RelatedLinksSection"],
+
+Cell[CellGroupData[{
+
+Cell["", "AuthorSection"],
+
+Cell[TextData[{
+ "Contributed by: ",
+ ButtonBox["S. M. Blinder",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/author.html?author=S.+M.+Blinder"],
+     None},
+  ButtonNote->
+   "http://demonstrations.wolfram.com/author.html?author=S.+M.+Blinder"]
+}], "Author",
+ CellChangeTimes->{{3.5715846054111156`*^9, 3.571584611857234*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{944, 868},
+WindowMargins->{{-5, Automatic}, {Automatic, 1}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Demonstration.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ResizeImages"->{
+  Cell[80864, 1856, 353, 9, 22, "ControlSuggestions",
+   CellTags->"ResizeImages"]},
+ "RotateAndZoomIn3D"->{
+  Cell[81220, 1867, 678, 16, 22, "ControlSuggestions",
+   CellTags->"RotateAndZoomIn3D"]},
+ "DragLocators"->{
+  Cell[81901, 1885, 340, 11, 22, "ControlSuggestions",
+   CellTags->"DragLocators"]},
+ "CreateAndDeleteLocators"->{
+  Cell[82244, 1898, 637, 15, 22, "ControlSuggestions",
+   CellTags->"CreateAndDeleteLocators"]},
+ "SliderZoom"->{
+  Cell[82884, 1915, 887, 22, 22, "ControlSuggestions",
+   CellTags->"SliderZoom"]},
+ "GamepadControls"->{
+  Cell[83774, 1939, 395, 10, 22, "ControlSuggestions",
+   CellTags->"GamepadControls"]},
+ "AutomaticAnimation"->{
+  Cell[84172, 1951, 1505, 32, 22, "ControlSuggestions",
+   CellTags->"AutomaticAnimation"]},
+ "BookmarkAnimation"->{
+  Cell[85680, 1985, 908, 21, 22, "ControlSuggestions",
+   CellTags->"BookmarkAnimation"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ResizeImages", 87920, 2057},
+ {"RotateAndZoomIn3D", 88029, 2060},
+ {"DragLocators", 88139, 2063},
+ {"CreateAndDeleteLocators", 88255, 2066},
+ {"SliderZoom", 88369, 2069},
+ {"GamepadControls", 88475, 2072},
+ {"AutomaticAnimation", 88589, 2075},
+ {"BookmarkAnimation", 88706, 2078}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 102, 1, 74, "DemoTitle"],
+Cell[684, 25, 33, 0, 287, "InitializationSection"],
+Cell[CellGroupData[{
+Cell[742, 29, 29, 0, 194, "ManipulateSection"],
+Cell[CellGroupData[{
+Cell[796, 33, 27019, 541, 650, "Input",
+ CellID->1543055076],
+Cell[27818, 576, 8399, 191, 553, "Output",
+ CellID->926367808]
+}, {2}]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36263, 773, 36, 0, 169, "ManipulateCaptionSection"],
+Cell[36302, 775, 1392, 29, 80, "ManipulateCaption",
+ CellID->1415843384],
+Cell[37697, 806, 4123, 121, 136, "ManipulateCaption",
+ CellID->1647410395],
+Cell[41823, 929, 1708, 38, 54, "ManipulateCaption",
+ CellID->519847994]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43568, 972, 28, 0, 173, "ThumbnailSection"],
+Cell[43599, 974, 8399, 191, 553, "Output",
+ CellID->207308306]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52035, 1170, 28, 0, 143, "SnapshotsSection"],
+Cell[52066, 1172, 8404, 191, 553, "Output",
+ CellID->1012223508],
+Cell[60473, 1365, 8398, 191, 553, "Output",
+ CellID->75047422],
+Cell[68874, 1558, 8403, 191, 553, "Output",
+ CellID->749120765]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77314, 1754, 26, 0, 336, "DetailsSection"],
+Cell[77343, 1756, 377, 11, 33, "DetailNotes",
+ CellID->558407852],
+Cell[77723, 1769, 483, 13, 23, "DetailNotes",
+ CellID->657231174],
+Cell[78209, 1784, 308, 7, 22, "DetailNotes",
+ CellID->1575944897],
+Cell[78520, 1793, 224, 4, 22, "DetailNotes",
+ CellID->1369317007],
+Cell[78747, 1799, 847, 21, 37, "DetailNotes",
+ CellID->335412935],
+Cell[79597, 1822, 527, 11, 22, "DetailNotes",
+ CellID->789416033],
+Cell[80127, 1835, 660, 14, 37, "DetailNotes",
+ CellID->60645955]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[80824, 1854, 37, 0, 126, "ControlSuggestionsSection"],
+Cell[80864, 1856, 353, 9, 22, "ControlSuggestions",
+ CellTags->"ResizeImages"],
+Cell[81220, 1867, 678, 16, 22, "ControlSuggestions",
+ CellTags->"RotateAndZoomIn3D"],
+Cell[81901, 1885, 340, 11, 22, "ControlSuggestions",
+ CellTags->"DragLocators"],
+Cell[82244, 1898, 637, 15, 22, "ControlSuggestions",
+ CellTags->"CreateAndDeleteLocators"],
+Cell[82884, 1915, 887, 22, 22, "ControlSuggestions",
+ CellTags->"SliderZoom"],
+Cell[83774, 1939, 395, 10, 22, "ControlSuggestions",
+ CellTags->"GamepadControls"],
+Cell[84172, 1951, 1505, 32, 22, "ControlSuggestions",
+ CellTags->"AutomaticAnimation"],
+Cell[85680, 1985, 908, 21, 22, "ControlSuggestions",
+ CellTags->"BookmarkAnimation"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[86625, 2011, 30, 0, 155, "SearchTermsSection"],
+Cell[86658, 2013, 126, 2, 22, "SearchTerms",
+ CellID->647298721],
+Cell[86787, 2017, 133, 2, 22, "SearchTerms",
+ CellID->1121759162],
+Cell[86923, 2021, 129, 2, 22, "SearchTerms",
+ CellID->2144931792]
+}, Open  ]],
+Cell[87067, 2026, 31, 0, 141, "RelatedLinksSection"],
+Cell[CellGroupData[{
+Cell[87123, 2030, 25, 0, 129, "AuthorSection"],
+Cell[87151, 2032, 367, 10, 22, "Author"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -1,0 +1,103 @@
+MADNESS runtime initialized with 7 threads in the pool and affinity -1 -1 -1
+Starting at time 0.7
+for iteration :  1
+orbital energies :  [*]  -4.13724398  -0.18825426
+
+eps_new for orbital:  0  is  -4.290538e+00
+ norm=  9.605431e-01  Energy=  -4.290538e+00  err(psi)= 1.161758e-01  err(eps)=  -1.532940e-01
+eps_new for orbital:  1  is  -3.341443e-01
+ norm=  1.216252e+00  Energy=  -3.341443e-01  err(psi)= 3.410613e-01  err(eps)=  -1.458900e-01
+for iteration :  2
+orbital energies :  [*]  -4.72292274  -0.30715033
+
+eps_new for orbital:  0  is  -4.788561e+00
+ norm=  9.599576e-01  Energy=  -4.788561e+00  err(psi)= 7.848418e-02  err(eps)=  -6.563873e-02
+eps_new for orbital:  1  is  -3.193818e-01
+ norm=  1.008372e+00  Energy=  -3.193818e-01  err(psi)= 5.687465e-02  err(eps)=  -1.223149e-02
+for iteration :  3
+orbital energies :  [*]  -4.80410117  -0.31296664
+
+eps_new for orbital:  0  is  -4.795622e+00
+ norm=  9.732924e-01  Energy=  -4.795622e+00  err(psi)= 4.445039e-02  err(eps)=  8.478934e-03
+eps_new for orbital:  1  is  -3.116776e-01
+ norm=  9.874184e-01  Energy=  -3.116776e-01  err(psi)= 2.100748e-02  err(eps)=  1.289056e-03
+for iteration :  4
+orbital energies :  [*]  -4.77276201  -0.31167723
+
+eps_new for orbital:  0  is  -4.758241e+00
+ norm=  9.884032e-01  Energy=  -4.758241e+00  err(psi)= 1.900629e-02  err(eps)=  1.452071e-02
+eps_new for orbital:  1  is  -3.104262e-01
+ norm=  9.958645e-01  Energy=  -3.104262e-01  err(psi)= 1.284306e-02  err(eps)=  1.251022e-03
+for iteration :  5
+orbital energies :  [*]  -4.75058640  -0.31026062
+
+eps_new for orbital:  0  is  -4.743078e+00
+ norm=  9.950050e-01  Energy=  -4.743078e+00  err(psi)= 7.716938e-03  err(eps)=  7.508640e-03
+eps_new for orbital:  1  is  -3.096451e-01
+ norm=  9.974894e-01  Energy=  -3.096451e-01  err(psi)= 4.302384e-03  err(eps)=  6.154693e-04
+for iteration :  6
+orbital energies :  [*]  -4.73839707  -0.30964365
+
+eps_new for orbital:  0  is  -4.735369e+00
+ norm=  9.981692e-01  Energy=  -4.735369e+00  err(psi)= 2.839590e-03  err(eps)=  3.028555e-03
+eps_new for orbital:  1  is  -3.093846e-01
+ norm=  9.992876e-01  Energy=  -3.093846e-01  err(psi)= 1.885819e-03  err(eps)=  2.590734e-04
+for iteration :  7
+orbital energies :  [*]  -4.73403658  -0.30938156
+
+eps_new for orbital:  0  is  -4.732855e+00
+ norm=  9.992758e-01  Energy=  -4.732855e+00  err(psi)= 1.088751e-03  err(eps)=  1.181965e-03
+eps_new for orbital:  1  is  -3.092880e-01
+ norm=  9.996529e-01  Energy=  -3.092880e-01  err(psi)= 6.010254e-04  err(eps)=  9.360458e-05
+for iteration :  8
+orbital energies :  [*]  -4.73220495  -0.30928792
+
+eps_new for orbital:  0  is  -4.731768e+00
+ norm=  9.997390e-01  Energy=  -4.731768e+00  err(psi)= 3.972472e-04  err(eps)=  4.369031e-04
+eps_new for orbital:  1  is  -3.092523e-01
+ norm=  9.999032e-01  Energy=  -3.092523e-01  err(psi)= 2.463302e-04  err(eps)=  3.562468e-05
+for iteration :  9
+orbital energies :  [*]  -4.73158687  -0.30925224
+
+eps_new for orbital:  0  is  -4.731421e+00
+ norm=  9.998982e-01  Energy=  -4.731421e+00  err(psi)= 1.521059e-04  err(eps)=  1.662241e-04
+eps_new for orbital:  1  is  -3.092398e-01
+ norm=  9.999554e-01  Energy=  -3.092398e-01  err(psi)= 7.807292e-05  err(eps)=  1.244227e-05
+for iteration :  10
+orbital energies :  [*]  -4.73133707  -0.30923980
+
+eps_new for orbital:  0  is  -4.731275e+00
+ norm=  9.999631e-01  Energy=  -4.731275e+00  err(psi)= 5.593877e-05  err(eps)=  6.207293e-05
+eps_new for orbital:  1  is  -3.092351e-01
+ norm=  9.999880e-01  Energy=  -3.092351e-01  err(psi)= 3.160025e-05  err(eps)=  4.660079e-06
+for iteration :  11
+orbital energies :  [*]  -4.73125247  -0.30923514
+
+eps_new for orbital:  0  is  -4.731229e+00
+ norm=  9.999857e-01  Energy=  -4.731229e+00  err(psi)= 2.138879e-05  err(eps)=  2.307771e-05
+eps_new for orbital:  1  is  -3.092336e-01
+ norm=  9.999949e-01  Energy=  -3.092336e-01  err(psi)= 9.906338e-06  err(eps)=  1.536603e-06
+for iteration :  12
+orbital energies :  [*]  -4.73121988  -0.30923360
+
+eps_new for orbital:  0  is  -4.731210e+00
+ norm=  9.999948e-01  Energy=  -4.731210e+00  err(psi)= 7.834090e-06  err(eps)=  9.588828e-06
+eps_new for orbital:  1  is  -3.092330e-01
+ norm=  9.999990e-01  Energy=  -3.092330e-01  err(psi)= 5.289442e-06  err(eps)=  5.912535e-07
+for iteration :  13
+orbital energies :  [*]  -4.73120849  -0.30923301
+
+eps_new for orbital:  0  is  -4.731205e+00
+ norm=  9.999976e-01  Energy=  -4.731205e+00  err(psi)= 2.761007e-06  err(eps)=  3.592152e-06
+eps_new for orbital:  1  is  -3.092328e-01
+ norm=  1.000000e+00  Energy=  -3.092328e-01  err(psi)= 2.732069e-06  err(eps)=  2.163425e-07
+
+       Summing up      
+
+ Total kinetic energy                        : 1.456186e+01
+ Total Electron-Nuclear potential energy     : -3.361910e+01
+ Total coulomb potential energy              : 7.154381e+00
+ Total exchange potential energy             : 2.666198e+00
+ Total energy                                : -1.456906e+01
+Finishing at time 174.1
+MADNESS runtime finalized but 1 world still exists

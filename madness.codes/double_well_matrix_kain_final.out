@@ -1,0 +1,321 @@
+/Users/raunakfarhaz/devel/compile/madness-debug/src/examples/sho_matrix_kain
+MADNESS runtime initialized with 7 threads in the pool and affinity -1 -1 -1
+starting at time 0.8
+For iteration :  1
+for state :  0 norm=  1.000202e+00  eps(no shift)=  -3.304179e+01  err(psi)= 9.717866e-03  err(eps)= -3.409603e-03  Energy= 9.548018e-01
+for state :  1 norm=  1.001787e+00  eps(no shift)=  -3.229975e+01  err(psi)= 2.799670e-02  err(eps)= -2.671150e-02  Energy= 1.673534e+00
+for state :  2 norm=  1.004299e+00  eps(no shift)=  -3.108779e+01  err(psi)= 4.429130e-02  err(eps)= -6.433893e-02  Energy= 2.847874e+00
+for state :  3 norm=  1.018945e+00  eps(no shift)=  -2.902018e+01  err(psi)= 1.056713e-01  err(eps)= -3.368526e-01  Energy= 4.642971e+00
+for state :  4 norm=  1.027929e+00  eps(no shift)=  -2.749172e+01  err(psi)= 1.310551e-01  err(eps)= -4.806422e-01  Energy= 6.027641e+00
+================================================================================
+For iteration :  2
+for state :  0 norm=  1.000112e+00  eps(no shift)=  -3.304549e+01  err(psi)= 7.280160e-03  err(eps)= -1.911156e-03  Energy= 9.526022e-01
+for state :  1 norm=  1.001333e+00  eps(no shift)=  -3.232860e+01  err(psi)= 2.334803e-02  err(eps)= -1.862073e-02  Energy= 1.652777e+00
+for state :  2 norm=  1.003309e+00  eps(no shift)=  -3.115852e+01  err(psi)= 3.743666e-02  err(eps)= -4.626184e-02  Energy= 2.795214e+00
+for state :  3 norm=  1.014947e+00  eps(no shift)=  -2.935247e+01  err(psi)= 9.118844e-02  err(eps)= -2.530224e-01  Energy= 4.394506e+00
+for state :  4 norm=  1.022110e+00  eps(no shift)=  -2.795666e+01  err(psi)= 1.124848e-01  err(eps)= -3.602288e-01  Energy= 5.683116e+00
+================================================================================
+For iteration :  3
+for state :  0 norm=  1.000058e+00  eps(no shift)=  -3.304752e+01  err(psi)= 5.362100e-03  err(eps)= -1.035741e-03  Energy= 9.514408e-01
+for state :  1 norm=  1.000974e+00  eps(no shift)=  -3.234846e+01  err(psi)= 1.920182e-02  err(eps)= -1.260098e-02  Energy= 1.638935e+00
+for state :  2 norm=  1.002477e+00  eps(no shift)=  -3.120872e+01  err(psi)= 3.112097e-02  err(eps)= -3.209383e-02  Energy= 2.759182e+00
+for state :  3 norm=  1.011902e+00  eps(no shift)=  -2.960290e+01  err(psi)= 7.890290e-02  err(eps)= -1.906647e-01  Energy= 4.206433e+00
+for state :  4 norm=  1.017599e+00  eps(no shift)=  -2.830776e+01  err(psi)= 9.663753e-02  err(eps)= -2.695133e-01  Energy= 5.422730e+00
+================================================================================
+For iteration :  4
+for state :  0 norm=  1.000027e+00  eps(no shift)=  -3.304861e+01  err(psi)= 3.894365e-03  err(eps)= -5.458144e-04  Energy= 9.508436e-01
+for state :  1 norm=  1.000699e+00  eps(no shift)=  -3.236175e+01  err(psi)= 1.560679e-02  err(eps)= -8.319226e-03  Energy= 1.629933e+00
+for state :  2 norm=  1.001813e+00  eps(no shift)=  -3.124308e+01  err(psi)= 2.549467e-02  err(eps)= -2.158509e-02  Energy= 2.735338e+00
+for state :  3 norm=  1.009564e+00  eps(no shift)=  -2.979215e+01  err(psi)= 6.842519e-02  err(eps)= -1.440171e-01  Energy= 4.063834e+00
+for state :  4 norm=  1.014093e+00  eps(no shift)=  -2.857219e+01  err(psi)= 8.313604e-02  err(eps)= -2.015859e-01  Energy= 5.226226e+00
+================================================================================
+For iteration :  5
+for state :  0 norm=  1.000011e+00  eps(no shift)=  -3.304918e+01  err(psi)= 2.798388e-03  err(eps)= -2.815705e-04  Energy= 9.505421e-01
+for state :  1 norm=  1.000497e+00  eps(no shift)=  -3.237043e+01  err(psi)= 1.256234e-02  err(eps)= -5.383477e-03  Energy= 1.624190e+00
+for state :  2 norm=  1.001304e+00  eps(no shift)=  -3.126589e+01  err(psi)= 2.062793e-02  err(eps)= -1.414638e-02  Energy= 2.719967e+00
+for state :  3 norm=  1.007743e+00  eps(no shift)=  -2.993541e+01  err(psi)= 5.943369e-02  err(eps)= -1.089762e-01  Energy= 3.955613e+00
+for state :  4 norm=  1.011355e+00  eps(no shift)=  -2.877104e+01  err(psi)= 7.162879e-02  err(eps)= -1.508890e-01  Energy= 5.078071e+00
+================================================================================
+For iteration :  6
+for state :  0 norm=  1.000003e+00  eps(no shift)=  -3.304947e+01  err(psi)= 1.995720e-03  err(eps)= -1.430878e-04  Energy= 9.503915e-01
+for state :  1 norm=  1.000350e+00  eps(no shift)=  -3.237599e+01  err(psi)= 1.003313e-02  err(eps)= -3.428745e-03  Energy= 1.620579e+00
+for state :  2 norm=  1.000926e+00  eps(no shift)=  -3.128067e+01  err(psi)= 1.652106e-02  err(eps)= -9.079176e-03  Energy= 2.710254e+00
+for state :  3 norm=  1.006311e+00  eps(no shift)=  -3.004399e+01  err(psi)= 5.168898e-02  err(eps)= -8.258630e-02  Energy= 3.873420e+00
+for state :  4 norm=  1.009204e+00  eps(no shift)=  -2.892050e+01  err(psi)= 6.180296e-02  err(eps)= -1.130807e-01  Energy= 4.966421e+00
+================================================================================
+For iteration :  7
+for state :  0 norm=  9.999987e-01  eps(no shift)=  -3.304961e+01  err(psi)= 1.416201e-03  err(eps)= -7.200526e-05  Energy= 9.503168e-01
+for state :  1 norm=  1.000246e+00  eps(no shift)=  -3.237951e+01  err(psi)= 7.964044e-03  err(eps)= -2.156943e-03  Energy= 1.618332e+00
+for state :  2 norm=  1.000652e+00  eps(no shift)=  -3.129006e+01  err(psi)= 1.312483e-02  err(eps)= -5.732203e-03  Energy= 2.704206e+00
+for state :  3 norm=  1.005175e+00  eps(no shift)=  -3.012638e+01  err(psi)= 4.499923e-02  err(eps)= -6.267111e-02  Energy= 3.810951e+00
+for state :  4 norm=  1.007499e+00  eps(no shift)=  -2.903284e+01  err(psi)= 5.339262e-02  err(eps)= -8.486655e-02  Energy= 4.882289e+00
+================================================================================
+For iteration :  8
+for state :  0 norm=  9.999972e-01  eps(no shift)=  -3.304968e+01  err(psi)= 1.001924e-03  err(eps)= -3.602821e-05  Energy= 9.502798e-01
+for state :  1 norm=  1.000173e+00  eps(no shift)=  -3.238171e+01  err(psi)= 6.291825e-03  err(eps)= -1.344202e-03  Energy= 1.616944e+00
+for state :  2 norm=  1.000456e+00  eps(no shift)=  -3.129595e+01  err(psi)= 1.036135e-02  err(eps)= -3.574349e-03  Energy= 2.700478e+00
+for state :  3 norm=  1.004268e+00  eps(no shift)=  -3.018895e+01  err(psi)= 3.920815e-02  err(eps)= -4.761685e-02  Energy= 3.763437e+00
+for state :  4 norm=  1.006137e+00  eps(no shift)=  -2.911734e+01  err(psi)= 4.617692e-02  err(eps)= -6.378652e-02  Energy= 4.818875e+00
+================================================================================
+For iteration :  9
+for state :  0 norm=  9.999968e-01  eps(no shift)=  -3.304972e+01  err(psi)= 7.076927e-04  err(eps)= -1.797903e-05  Energy= 9.502615e-01
+for state :  1 norm=  1.000121e+00  eps(no shift)=  -3.238308e+01  err(psi)= 4.953054e-03  err(eps)= -8.319030e-04  Energy= 1.616092e+00
+for state :  2 norm=  1.000318e+00  eps(no shift)=  -3.129959e+01  err(psi)= 8.141047e-03  err(eps)= -2.208733e-03  Energy= 2.698197e+00
+for state :  3 norm=  1.003537e+00  eps(no shift)=  -3.023651e+01  err(psi)= 3.418659e-02  err(eps)= -3.622070e-02  Energy= 3.727269e+00
+for state :  4 norm=  1.005041e+00  eps(no shift)=  -2.918094e+01  err(psi)= 3.997359e-02  err(eps)= -4.801528e-02  Energy= 4.771046e+00
+================================================================================
+For iteration :  10
+for state :  0 norm=  9.999969e-01  eps(no shift)=  -3.304974e+01  err(psi)= 4.995505e-04  err(eps)= -8.968538e-06  Energy= 9.502524e-01
+for state :  1 norm=  1.000085e+00  eps(no shift)=  -3.238392e+01  err(psi)= 3.888947e-03  err(eps)= -5.122898e-04  Energy= 1.615570e+00
+for state :  2 norm=  1.000221e+00  eps(no shift)=  -3.130184e+01  err(psi)= 6.374371e-03  err(eps)= -1.356392e-03  Energy= 2.696808e+00
+for state :  3 norm=  1.002945e+00  eps(no shift)=  -3.027270e+01  err(psi)= 2.982649e-02  err(eps)= -2.758264e-02  Energy= 3.699713e+00
+for state :  4 norm=  1.004153e+00  eps(no shift)=  -2.922886e+01  err(psi)= 3.463164e-02  err(eps)= -3.619966e-02  Energy= 4.734940e+00
+================================================================================
+For iteration :  11
+for state :  0 norm=  9.999972e-01  eps(no shift)=  -3.304975e+01  err(psi)= 3.526292e-04  err(eps)= -4.479823e-06  Energy= 9.502479e-01
+for state :  1 norm=  1.000060e+00  eps(no shift)=  -3.238443e+01  err(psi)= 3.047721e-03  err(eps)= -3.143900e-04  Energy= 1.615251e+00
+for state :  2 norm=  1.000152e+00  eps(no shift)=  -3.130321e+01  err(psi)= 4.978812e-03  err(eps)= -8.297157e-04  Energy= 2.695962e+00
+for state :  3 norm=  1.002462e+00  eps(no shift)=  -3.030027e+01  err(psi)= 2.603658e-02  err(eps)= -2.102731e-02  Energy= 3.678699e+00
+for state :  4 norm=  1.003428e+00  eps(no shift)=  -2.926501e+01  err(psi)= 3.002509e-02  err(eps)= -2.733538e-02  Energy= 4.707652e+00
+================================================================================
+For iteration :  12
+for state :  0 norm=  9.999975e-01  eps(no shift)=  -3.304975e+01  err(psi)= 2.490212e-04  err(eps)= -2.243886e-06  Energy= 9.502456e-01
+for state :  1 norm=  1.000042e+00  eps(no shift)=  -3.238475e+01  err(psi)= 2.385341e-03  err(eps)= -1.925132e-04  Energy= 1.615057e+00
+for state :  2 norm=  1.000105e+00  eps(no shift)=  -3.130404e+01  err(psi)= 3.882249e-03  err(eps)= -5.065233e-04  Energy= 2.695449e+00
+for state :  3 norm=  1.002066e+00  eps(no shift)=  -3.032129e+01  err(psi)= 2.273927e-02  err(eps)= -1.604682e-02  Energy= 3.662659e+00
+for state :  4 norm=  1.002832e+00  eps(no shift)=  -2.929232e+01  err(psi)= 2.604807e-02  err(eps)= -2.067597e-02  Energy= 4.686999e+00
+================================================================================
+For iteration :  13
+for state :  0 norm=  9.999978e-01  eps(no shift)=  -3.304975e+01  err(psi)= 1.759690e-04  err(eps)= -1.128530e-06  Energy= 9.502445e-01
+for state :  1 norm=  1.000030e+00  eps(no shift)=  -3.238494e+01  err(psi)= 1.865281e-03  err(eps)= -1.177343e-04  Energy= 1.614938e+00
+for state :  2 norm=  1.000071e+00  eps(no shift)=  -3.130455e+01  err(psi)= 3.023876e-03  err(eps)= -3.090866e-04  Energy= 2.695137e+00
+for state :  3 norm=  1.001739e+00  eps(no shift)=  -3.033734e+01  err(psi)= 1.986820e-02  err(eps)= -1.225859e-02  Energy= 3.650404e+00
+for state :  4 norm=  1.002341e+00  eps(no shift)=  -2.931299e+01  err(psi)= 2.261104e-02  err(eps)= -1.566578e-02  Energy= 4.671346e+00
+================================================================================
+For iteration :  14
+for state :  0 norm=  9.999980e-01  eps(no shift)=  -3.304976e+01  err(psi)= 1.244450e-04  err(eps)= -5.706977e-07  Energy= 9.502439e-01
+for state :  1 norm=  1.000021e+00  eps(no shift)=  -3.238506e+01  err(psi)= 1.457790e-03  err(eps)= -7.196491e-05  Energy= 1.614866e+00
+for state :  2 norm=  1.000047e+00  eps(no shift)=  -3.130486e+01  err(psi)= 2.353717e-03  err(eps)= -1.887806e-04  Energy= 2.694947e+00
+for state :  3 norm=  1.001467e+00  eps(no shift)=  -3.034959e+01  err(psi)= 1.736647e-02  err(eps)= -9.374043e-03  Energy= 3.641032e+00
+for state :  4 norm=  1.001932e+00  eps(no shift)=  -2.932865e+01  err(psi)= 1.963795e-02  err(eps)= -1.189075e-02  Energy= 4.659461e+00
+================================================================================
+For iteration :  15
+for state :  0 norm=  9.999982e-01  eps(no shift)=  -3.304976e+01  err(psi)= 8.808538e-05  err(eps)= -2.906686e-07  Energy= 9.502436e-01
+for state :  1 norm=  1.000015e+00  eps(no shift)=  -3.238513e+01  err(psi)= 1.138943e-03  err(eps)= -4.399205e-05  Energy= 1.614821e+00
+for state :  2 norm=  1.000030e+00  eps(no shift)=  -3.130505e+01  err(psi)= 1.831426e-03  err(eps)= -1.155468e-04  Energy= 2.694830e+00
+for state :  3 norm=  1.001241e+00  eps(no shift)=  -3.035897e+01  err(psi)= 1.518512e-02  err(eps)= -7.175262e-03  Energy= 3.633858e+00
+for state :  4 norm=  1.001591e+00  eps(no shift)=  -2.934054e+01  err(psi)= 1.706402e-02  err(eps)= -9.041955e-03  Energy= 4.650423e+00
+================================================================================
+For iteration :  16
+for state :  0 norm=  9.999984e-01  eps(no shift)=  -3.304976e+01  err(psi)= 6.241386e-05  err(eps)= -1.494120e-07  Energy= 9.502434e-01
+for state :  1 norm=  1.000010e+00  eps(no shift)=  -3.238518e+01  err(psi)= 8.896856e-04  err(eps)= -2.690803e-05  Energy= 1.614795e+00
+for state :  2 norm=  1.000018e+00  eps(no shift)=  -3.130517e+01  err(psi)= 1.424847e-03  err(eps)= -7.095492e-05  Energy= 2.694759e+00
+for state :  3 norm=  1.001051e+00  eps(no shift)=  -3.036614e+01  err(psi)= 1.328200e-02  err(eps)= -5.497469e-03  Energy= 3.628361e+00
+for state :  4 norm=  1.001305e+00  eps(no shift)=  -2.934958e+01  err(psi)= 1.483393e-02  err(eps)= -6.888718e-03  Energy= 4.643536e+00
+================================================================================
+For iteration :  17
+for state :  0 norm=  9.999985e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.428518e-05  err(eps)= -7.771255e-08  Energy= 9.502434e-01
+for state :  1 norm=  1.000007e+00  eps(no shift)=  -3.238521e+01  err(psi)= 6.949390e-04  err(eps)= -1.647554e-05  Energy= 1.614778e+00
+for state :  2 norm=  1.000009e+00  eps(no shift)=  -3.130524e+01  err(psi)= 1.108583e-03  err(eps)= -4.376595e-05  Energy= 2.694715e+00
+for state :  3 norm=  1.000891e+00  eps(no shift)=  -3.037164e+01  err(psi)= 1.162071e-02  err(eps)= -4.215931e-03  Energy= 3.624145e+00
+for state :  4 norm=  1.001064e+00  eps(no shift)=  -2.935646e+01  err(psi)= 1.290038e-02  err(eps)= -5.258556e-03  Energy= 4.638278e+00
+================================================================================
+For iteration :  18
+for state :  0 norm=  9.999986e-01  eps(no shift)=  -3.304976e+01  err(psi)= 3.149087e-05  err(eps)= -4.102818e-08  Energy= 9.502433e-01
+for state :  1 norm=  1.000005e+00  eps(no shift)=  -3.238522e+01  err(psi)= 5.428312e-04  err(eps)= -1.010267e-05  Energy= 1.614768e+00
+for state :  2 norm=  1.000003e+00  eps(no shift)=  -3.130528e+01  err(psi)= 8.627038e-04  err(eps)= -2.714877e-05  Energy= 2.694688e+00
+for state :  3 norm=  1.000756e+00  eps(no shift)=  -3.037585e+01  err(psi)= 1.016979e-02  err(eps)= -3.236113e-03  Energy= 3.620909e+00
+for state :  4 norm=  1.000860e+00  eps(no shift)=  -2.936172e+01  err(psi)= 1.122283e-02  err(eps)= -4.022352e-03  Energy= 4.634256e+00
+================================================================================
+For iteration :  19
+for state :  0 norm=  9.999986e-01  eps(no shift)=  -3.304976e+01  err(psi)= 2.248173e-05  err(eps)= -2.206602e-08  Energy= 9.502433e-01
+for state :  1 norm=  1.000003e+00  eps(no shift)=  -3.238523e+01  err(psi)= 4.240445e-04  err(eps)= -6.206805e-06  Energy= 1.614762e+00
+for state :  2 norm=  9.999982e-01  eps(no shift)=  -3.130531e+01  err(psi)= 6.716370e-04  err(eps)= -1.695879e-05  Energy= 2.694671e+00
+for state :  3 norm=  1.000641e+00  eps(no shift)=  -3.037909e+01  err(psi)= 8.902032e-03  err(eps)= -2.486281e-03  Energy= 3.618423e+00
+for state :  4 norm=  1.000688e+00  eps(no shift)=  -2.936574e+01  err(psi)= 9.766543e-03  err(eps)= -3.083313e-03  Energy= 4.631173e+00
+================================================================================
+For iteration :  20
+for state :  0 norm=  9.999987e-01  eps(no shift)=  -3.304976e+01  err(psi)= 1.617292e-05  err(eps)= -1.213517e-08  Energy= 9.502433e-01
+for state :  1 norm=  1.000002e+00  eps(no shift)=  -3.238524e+01  err(psi)= 3.312831e-04  err(eps)= -3.822561e-06  Energy= 1.614758e+00
+for state :  2 norm=  9.999948e-01  eps(no shift)=  -3.130533e+01  err(psi)= 5.232580e-04  err(eps)= -1.068280e-05  Energy= 2.694660e+00
+for state :  3 norm=  1.000544e+00  eps(no shift)=  -3.038158e+01  err(psi)= 7.793865e-03  err(eps)= -1.911937e-03  Energy= 3.616511e+00
+for state :  4 norm=  1.000540e+00  eps(no shift)=  -2.936883e+01  err(psi)= 8.501671e-03  err(eps)= -2.368778e-03  Energy= 4.628805e+00
+================================================================================
+For iteration :  21
+for state :  0 norm=  9.999987e-01  eps(no shift)=  -3.304976e+01  err(psi)= 1.180651e-05  err(eps)= -6.846989e-09  Energy= 9.502433e-01
+for state :  1 norm=  1.000001e+00  eps(no shift)=  -3.238524e+01  err(psi)= 2.588433e-04  err(eps)= -2.361279e-06  Energy= 1.614755e+00
+for state :  2 norm=  9.999922e-01  eps(no shift)=  -3.130534e+01  err(psi)= 4.081485e-04  err(eps)= -6.796254e-06  Energy= 2.694653e+00
+for state :  3 norm=  1.000460e+00  eps(no shift)=  -3.038349e+01  err(psi)= 6.824842e-03  err(eps)= -1.471630e-03  Energy= 3.615040e+00
+for state :  4 norm=  1.000415e+00  eps(no shift)=  -2.937120e+01  err(psi)= 7.402557e-03  err(eps)= -1.824117e-03  Energy= 4.626981e+00
+================================================================================
+For iteration :  22
+for state :  0 norm=  9.999987e-01  eps(no shift)=  -3.304976e+01  err(psi)= 8.852077e-06  err(eps)= -3.972250e-09  Energy= 9.502433e-01
+for state :  1 norm=  9.999999e-01  eps(no shift)=  -3.238524e+01  err(psi)= 2.022701e-04  err(eps)= -1.464012e-06  Energy= 1.614754e+00
+for state :  2 norm=  9.999902e-01  eps(no shift)=  -3.130535e+01  err(psi)= 3.190094e-04  err(eps)= -4.373293e-06  Energy= 2.694649e+00
+for state :  3 norm=  1.000389e+00  eps(no shift)=  -3.038496e+01  err(psi)= 5.977215e-03  err(eps)= -1.133795e-03  Energy= 3.613906e+00
+for state :  4 norm=  1.000307e+00  eps(no shift)=  -2.937302e+01  err(psi)= 6.447117e-03  err(eps)= -1.408193e-03  Energy= 4.625572e+00
+================================================================================
+For iteration :  23
+for state :  0 norm=  9.999987e-01  eps(no shift)=  -3.304976e+01  err(psi)= 6.930584e-06  err(eps)= -2.370175e-09  Energy= 9.502433e-01
+for state :  1 norm=  9.999993e-01  eps(no shift)=  -3.238525e+01  err(psi)= 1.580866e-04  err(eps)= -9.117981e-07  Energy= 1.614753e+00
+for state :  2 norm=  9.999888e-01  eps(no shift)=  -3.130535e+01  err(psi)= 2.501951e-04  err(eps)= -2.850582e-06  Energy= 2.694646e+00
+for state :  3 norm=  1.000328e+00  eps(no shift)=  -3.038609e+01  err(psi)= 5.235561e-03  err(eps)= -8.743698e-04  Energy= 3.613031e+00
+for state :  4 norm=  1.000215e+00  eps(no shift)=  -2.937443e+01  err(psi)= 5.616318e-03  err(eps)= -1.089983e-03  Energy= 4.624482e+00
+================================================================================
+For iteration :  24
+for state :  0 norm=  9.999987e-01  eps(no shift)=  -3.304976e+01  err(psi)= 5.754498e-06  err(eps)= -1.451429e-09  Energy= 9.502433e-01
+for state :  1 norm=  9.999989e-01  eps(no shift)=  -3.238525e+01  err(psi)= 1.235800e-04  err(eps)= -5.709852e-07  Energy= 1.614753e+00
+for state :  2 norm=  9.999877e-01  eps(no shift)=  -3.130535e+01  err(psi)= 1.973491e-04  err(eps)= -1.884499e-06  Energy= 2.694644e+00
+for state :  3 norm=  1.000275e+00  eps(no shift)=  -3.038697e+01  err(psi)= 4.586464e-03  err(eps)= -6.749949e-04  Energy= 3.612356e+00
+for state :  4 norm=  1.000135e+00  eps(no shift)=  -2.937552e+01  err(psi)= 4.893741e-03  err(eps)= -8.460573e-04  Energy= 4.623636e+00
+================================================================================
+For iteration :  25
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 5.089767e-06  err(eps)= -9.077645e-10  Energy= 9.502433e-01
+for state :  1 norm=  9.999986e-01  eps(no shift)=  -3.238525e+01  err(psi)= 9.663421e-05  err(eps)= -3.599173e-07  Energy= 1.614752e+00
+for state :  2 norm=  9.999868e-01  eps(no shift)=  -3.130536e+01  err(psi)= 1.571121e-04  err(eps)= -1.264762e-06  Energy= 2.694643e+00
+for state :  3 norm=  1.000229e+00  eps(no shift)=  -3.038764e+01  err(psi)= 4.018246e-03  err(eps)= -5.216456e-04  Energy= 3.611835e+00
+for state :  4 norm=  1.000067e+00  eps(no shift)=  -2.937636e+01  err(psi)= 4.265209e-03  err(eps)= -6.586921e-04  Energy= 4.622978e+00
+================================================================================
+For iteration :  26
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.747228e-06  err(eps)= -5.754970e-10  Energy= 9.502433e-01
+for state :  1 norm=  9.999984e-01  eps(no shift)=  -3.238525e+01  err(psi)= 7.559929e-05  err(eps)= -2.286511e-07  Energy= 1.614752e+00
+for state :  2 norm=  9.999862e-01  eps(no shift)=  -3.130536e+01  err(psi)= 1.268865e-04  err(eps)= -8.621693e-07  Energy= 2.694642e+00
+for state :  3 norm=  1.000190e+00  eps(no shift)=  -3.038817e+01  err(psi)= 3.520730e-03  err(eps)= -4.036001e-04  Energy= 3.611431e+00
+for state :  4 norm=  1.000008e+00  eps(no shift)=  -2.937702e+01  err(psi)= 3.718470e-03  err(eps)= -5.144617e-04  Energy= 4.622463e+00
+================================================================================
+For iteration :  27
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.589228e-06  err(eps)= -3.658620e-10  Energy= 9.502433e-01
+for state :  1 norm=  9.999982e-01  eps(no shift)=  -3.238525e+01  err(psi)= 5.918910e-05  err(eps)= -1.465972e-07  Energy= 1.614752e+00
+for state :  2 norm=  9.999857e-01  eps(no shift)=  -3.130536e+01  err(psi)= 1.046361e-04  err(eps)= -5.969472e-07  Energy= 2.694642e+00
+for state :  3 norm=  1.000156e+00  eps(no shift)=  -3.038857e+01  err(psi)= 3.085048e-03  err(eps)= -3.126545e-04  Energy= 3.611118e+00
+for state :  4 norm=  9.999565e-01  eps(no shift)=  -2.937754e+01  err(psi)= 3.242926e-03  err(eps)= -4.031811e-04  Energy= 4.622060e+00
+================================================================================
+For iteration :  28
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.528364e-06  err(eps)= -2.297789e-10  Energy= 9.502433e-01
+for state :  1 norm=  9.999981e-01  eps(no shift)=  -3.238525e+01  err(psi)= 4.640164e-05  err(eps)= -9.498890e-08  Energy= 1.614752e+00
+for state :  2 norm=  9.999853e-01  eps(no shift)=  -3.130536e+01  err(psi)= 8.871395e-05  err(eps)= -4.195454e-07  Energy= 2.694641e+00
+for state :  3 norm=  1.000126e+00  eps(no shift)=  -3.038888e+01  err(psi)= 2.703459e-03  err(eps)= -2.425263e-04  Energy= 3.610876e+00
+for state :  4 norm=  9.999124e-01  eps(no shift)=  -2.937794e+01  err(psi)= 2.829408e-03  err(eps)= -3.171131e-04  Energy= 4.621743e+00
+================================================================================
+For iteration :  29
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.515053e-06  err(eps)= -1.391136e-10  Energy= 9.502433e-01
+for state :  1 norm=  9.999979e-01  eps(no shift)=  -3.238525e+01  err(psi)= 3.645703e-05  err(eps)= -6.228963e-08  Energy= 1.614752e+00
+for state :  2 norm=  9.999850e-01  eps(no shift)=  -3.130536e+01  err(psi)= 7.772734e-05  err(eps)= -2.989660e-07  Energy= 2.694641e+00
+for state :  3 norm=  1.000100e+00  eps(no shift)=  -3.038912e+01  err(psi)= 2.369209e-03  err(eps)= -1.884011e-04  Energy= 3.610688e+00
+for state :  4 norm=  9.998741e-01  eps(no shift)=  -2.937826e+01  err(psi)= 2.469977e-03  err(eps)= -2.503714e-04  Energy= 4.621493e+00
+================================================================================
+For iteration :  30
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.523254e-06  err(eps)= -7.747758e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999979e-01  eps(no shift)=  -3.238525e+01  err(psi)= 2.874899e-05  err(eps)= -4.139002e-08  Energy= 1.614752e+00
+for state :  2 norm=  9.999848e-01  eps(no shift)=  -3.130536e+01  err(psi)= 7.046200e-05  err(eps)= -2.156523e-07  Energy= 2.694641e+00
+for state :  3 norm=  1.000078e+00  eps(no shift)=  -3.038931e+01  err(psi)= 2.076398e-03  err(eps)= -1.465865e-04  Energy= 3.610541e+00
+for state :  4 norm=  9.998410e-01  eps(no shift)=  -2.937851e+01  err(psi)= 2.157760e-03  err(eps)= -1.984715e-04  Energy= 4.621294e+00
+================================================================================
+For iteration :  31
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.539987e-06  err(eps)= -3.483080e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999978e-01  eps(no shift)=  -3.238525e+01  err(psi)= 2.280685e-05  err(eps)= -2.789603e-08  Energy= 1.614752e+00
+for state :  2 norm=  9.999846e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.587233e-05  err(eps)= -1.571424e-07  Energy= 2.694640e+00
+for state :  3 norm=  1.000059e+00  eps(no shift)=  -3.038946e+01  err(psi)= 1.819870e-03  err(eps)= -1.142492e-04  Energy= 3.610427e+00
+for state :  4 norm=  9.998122e-01  eps(no shift)=  -2.937871e+01  err(psi)= 1.886805e-03  err(eps)= -1.579919e-04  Energy= 4.621136e+00
+================================================================================
+For iteration :  32
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.559069e-06  err(eps)= -4.938272e-12  Energy= 9.502433e-01
+for state :  1 norm=  9.999978e-01  eps(no shift)=  -3.238525e+01  err(psi)= 1.826527e-05  err(eps)= -1.908200e-08  Energy= 1.614752e+00
+for state :  2 norm=  9.999845e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.310741e-05  err(eps)= -1.154036e-07  Energy= 2.694640e+00
+for state :  3 norm=  1.000042e+00  eps(no shift)=  -3.038957e+01  err(psi)= 1.595122e-03  err(eps)= -8.921316e-05  Energy= 3.610338e+00
+for state :  4 norm=  9.997872e-01  eps(no shift)=  -2.937886e+01  err(psi)= 1.651956e-03  err(eps)= -1.263185e-04  Energy= 4.621010e+00
+================================================================================
+For iteration :  33
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.577719e-06  err(eps)= 1.627143e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999977e-01  eps(no shift)=  -3.238525e+01  err(psi)= 1.483952e-05  err(eps)= -1.324980e-08  Energy= 1.614752e+00
+for state :  2 norm=  9.999844e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.152598e-05  err(eps)= -8.519061e-08  Energy= 2.694640e+00
+for state :  3 norm=  1.000027e+00  eps(no shift)=  -3.038966e+01  err(psi)= 1.398213e-03  err(eps)= -6.980647e-05  Energy= 3.610268e+00
+for state :  4 norm=  9.997655e-01  eps(no shift)=  -2.937899e+01  err(psi)= 1.448749e-03  err(eps)= -1.014508e-04  Energy= 4.620908e+00
+================================================================================
+For iteration :  34
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.594814e-06  err(eps)= 3.143086e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999977e-01  eps(no shift)=  -3.238525e+01  err(psi)= 1.230452e-05  err(eps)= -9.335706e-09  Energy= 1.614752e+00
+for state :  2 norm=  9.999843e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.067937e-05  err(eps)= -6.302890e-08  Energy= 2.694640e+00
+for state :  3 norm=  1.000014e+00  eps(no shift)=  -3.038973e+01  err(psi)= 1.225699e-03  err(eps)= -5.474354e-05  Energy= 3.610213e+00
+for state :  4 norm=  9.997466e-01  eps(no shift)=  -2.937909e+01  err(psi)= 1.273317e-03  err(eps)= -8.185545e-05  Energy= 4.620827e+00
+================================================================================
+For iteration :  35
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.610010e-06  err(eps)= 4.236256e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999977e-01  eps(no shift)=  -3.238525e+01  err(psi)= 1.047704e-05  err(eps)= -6.669232e-09  Energy= 1.614752e+00
+for state :  2 norm=  9.999842e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.027192e-05  err(eps)= -4.658107e-08  Energy= 2.694640e+00
+for state :  3 norm=  1.000003e+00  eps(no shift)=  -3.038979e+01  err(psi)= 1.074566e-03  err(eps)= -4.303529e-05  Energy= 3.610170e+00
+for state :  4 norm=  9.997302e-01  eps(no shift)=  -2.937917e+01  err(psi)= 1.122307e-03  err(eps)= -6.635532e-05  Energy= 4.620760e+00
+================================================================================
+For iteration :  36
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.623315e-06  err(eps)= 5.027090e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999977e-01  eps(no shift)=  -3.238525e+01  err(psi)= 9.201987e-06  err(eps)= -4.824358e-09  Energy= 1.614752e+00
+for state :  2 norm=  9.999842e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.011735e-05  err(eps)= -3.424924e-08  Energy= 2.694640e+00
+for state :  3 norm=  9.999930e-01  eps(no shift)=  -3.038983e+01  err(psi)= 9.421770e-04  err(eps)= -3.392026e-05  Energy= 3.610136e+00
+for state :  4 norm=  9.997159e-01  eps(no shift)=  -2.937924e+01  err(psi)= 9.928095e-04  err(eps)= -5.404494e-05  Energy= 4.620706e+00
+================================================================================
+For iteration :  37
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.634878e-06  err(eps)= 5.606893e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999976e-01  eps(no shift)=  -3.238525e+01  err(psi)= 8.344758e-06  err(eps)= -3.528056e-09  Energy= 1.614752e+00
+for state :  2 norm=  9.999841e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.010213e-05  err(eps)= -2.492316e-08  Energy= 2.694640e+00
+for state :  3 norm=  9.999845e-01  eps(no shift)=  -3.038986e+01  err(psi)= 8.262262e-04  err(eps)= -2.681184e-05  Energy= 3.610109e+00
+for state :  4 norm=  9.997035e-01  eps(no shift)=  -2.937929e+01  err(psi)= 8.822867e-04  err(eps)= -4.422654e-05  Energy= 4.620662e+00
+================================================================================
+For iteration :  38
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.644895e-06  err(eps)= 6.029310e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999976e-01  eps(no shift)=  -3.238525e+01  err(psi)= 7.790106e-06  err(eps)= -2.603485e-09  Energy= 1.614752e+00
+for state :  2 norm=  9.999841e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.015887e-05  err(eps)= -1.781886e-08  Energy= 2.694640e+00
+for state :  3 norm=  9.999770e-01  eps(no shift)=  -3.038989e+01  err(psi)= 7.246951e-04  err(eps)= -2.125781e-05  Energy= 3.610088e+00
+for state :  4 norm=  9.996926e-01  eps(no shift)=  -2.937934e+01  err(psi)= 7.885143e-04  err(eps)= -3.636127e-05  Energy= 4.620626e+00
+================================================================================
+For iteration :  39
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.653565e-06  err(eps)= 6.342660e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999976e-01  eps(no shift)=  -3.238525e+01  err(psi)= 7.444324e-06  err(eps)= -1.934650e-09  Energy= 1.614752e+00
+for state :  2 norm=  9.999841e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.024860e-05  err(eps)= -1.237446e-08  Energy= 2.694640e+00
+for state :  3 norm=  9.999704e-01  eps(no shift)=  -3.038991e+01  err(psi)= 6.358183e-04  err(eps)= -1.690931e-05  Energy= 3.610071e+00
+for state :  4 norm=  9.996832e-01  eps(no shift)=  -2.937937e+01  err(psi)= 7.095234e-04  err(eps)= -3.003212e-05  Energy= 4.620596e+00
+================================================================================
+For iteration :  40
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.661068e-06  err(eps)= 6.576428e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999976e-01  eps(no shift)=  -3.238525e+01  err(psi)= 7.236373e-06  err(eps)= -1.444491e-09  Energy= 1.614752e+00
+for state :  2 norm=  9.999841e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.034945e-05  err(eps)= -8.181390e-09  Energy= 2.694640e+00
+for state :  3 norm=  9.999647e-01  eps(no shift)=  -3.038993e+01  err(psi)= 5.580511e-04  err(eps)= -1.349699e-05  Energy= 3.610058e+00
+for state :  4 norm=  9.996750e-01  eps(no shift)=  -2.937940e+01  err(psi)= 6.435492e-04  err(eps)= -2.491552e-05  Energy= 4.620571e+00
+================================================================================
+For iteration :  41
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.667567e-06  err(eps)= 6.751932e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999976e-01  eps(no shift)=  -3.238525e+01  err(psi)= 7.115958e-06  err(eps)= -1.081137e-09  Energy= 1.614752e+00
+for state :  2 norm=  9.999840e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.044965e-05  err(eps)= -4.938864e-09  Energy= 2.694640e+00
+for state :  3 norm=  9.999596e-01  eps(no shift)=  -3.038994e+01  err(psi)= 4.900428e-04  err(eps)= -1.081274e-05  Energy= 3.610047e+00
+for state :  4 norm=  9.996678e-01  eps(no shift)=  -2.937943e+01  err(psi)= 5.889867e-04  err(eps)= -2.075980e-05  Energy= 4.620550e+00
+================================================================================
+For iteration :  42
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.673201e-06  err(eps)= 6.881962e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999976e-01  eps(no shift)=  -3.238525e+01  err(psi)= 7.049412e-06  err(eps)= -8.090328e-10  Energy= 1.614752e+00
+for state :  2 norm=  9.999840e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.054333e-05  err(eps)= -2.423013e-09  Energy= 2.694640e+00
+for state :  3 norm=  9.999553e-01  eps(no shift)=  -3.038995e+01  err(psi)= 4.306125e-04  err(eps)= -8.695591e-06  Energy= 3.610038e+00
+for state :  4 norm=  9.996616e-01  eps(no shift)=  -2.937945e+01  err(psi)= 5.443570e-04  err(eps)= -1.736861e-05  Energy= 4.620533e+00
+================================================================================
+For iteration :  43
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.678090e-06  err(eps)= 6.981793e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999976e-01  eps(no shift)=  -3.238525e+01  err(psi)= 7.015121e-06  err(eps)= -6.034959e-10  Energy= 1.614752e+00
+for state :  2 norm=  9.999840e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.062795e-05  err(eps)= -4.655156e-10  Energy= 2.694640e+00
+for state :  3 norm=  9.999514e-01  eps(no shift)=  -3.038996e+01  err(psi)= 3.787282e-04  err(eps)= -7.020942e-06  Energy= 3.610031e+00
+for state :  4 norm=  9.996561e-01  eps(no shift)=  -2.937947e+01  err(psi)= 5.082862e-04  err(eps)= -1.458835e-05  Energy= 4.620518e+00
+================================================================================
+For iteration :  44
+for state :  0 norm=  9.999988e-01  eps(no shift)=  -3.304976e+01  err(psi)= 4.682335e-06  err(eps)= 7.059953e-11  Energy= 9.502433e-01
+for state :  1 norm=  9.999976e-01  eps(no shift)=  -3.238525e+01  err(psi)= 6.999627e-06  err(eps)= -4.471179e-10  Energy= 1.614752e+00
+for state :  2 norm=  9.999840e-01  eps(no shift)=  -3.130536e+01  err(psi)= 6.070283e-05  err(eps)= 1.061071e-09  Energy= 2.694640e+00
+for state :  3 norm=  9.999480e-01  eps(no shift)=  -3.038997e+01  err(psi)= 3.334881e-04  err(eps)= -5.692219e-06  Energy= 3.610025e+00
+for state :  4 norm=  9.996514e-01  eps(no shift)=  -2.937948e+01  err(psi)= 4.794967e-04  err(eps)= -1.229840e-05  Energy= 4.620506e+00
+================================================================================
+New eigenvalues : 
+Energy of state :  0   9.502433e-01
+Energy of state :  1   1.614752e+00
+Energy of state :  2   2.694640e+00
+Energy of state :  3   3.610025e+00
+Energy of state :  4   4.620506e+00
+finishing at time 14.1
+MADNESS runtime finalized but 1 world still exists
+
+Process finished with exit code 0

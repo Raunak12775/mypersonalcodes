@@ -1,0 +1,61 @@
+/Users/raunakfarhaz/devel/compile/madness-debug/src/examples/h_atom_3d_matrix_kain
+MADNESS runtime initialized with 7 threads in the pool and affinity -1 -1 -1
+starting at time 0.9
+For iteration :  1
+for state :  0 norm=  1.042997e+00  Energy=  -4.242115e-01  err(psi)= 1.514218e-01  err(eps)= -8.572765e-02
+for state :  1 norm=  1.002572e+00  Energy=  -1.222166e-01  err(psi)= 6.989150e-02  err(eps)= -1.785509e-02
+for state :  2 norm=  1.196739e+00  Energy=  -6.047277e-02  err(psi)= 3.189264e-01  err(eps)= -2.425331e-02
+================================================================================
+For iteration :  2
+for state :  0 norm=  9.761322e-01  Energy=  -4.745280e-01  err(psi)= 1.233136e-01  err(eps)= -4.350181e-02
+for state :  1 norm=  9.912503e-01  Energy=  -1.214871e-01  err(psi)= 5.151572e-02  err(eps)= -4.650264e-03
+for state :  2 norm=  1.016377e+00  Energy=  -5.514515e-02  err(psi)= 5.230655e-02  err(eps)= -1.824785e-03
+================================================================================
+For iteration :  3
+for state :  0 norm=  9.708027e-01  Energy=  -4.929821e-01  err(psi)= 8.416361e-02  err(eps)= -1.659867e-02
+for state :  1 norm=  9.923040e-01  Energy=  -1.235333e-01  err(psi)= 4.812868e-02  err(eps)= -2.148558e-03
+for state :  2 norm=  1.003232e+00  Energy=  -5.541691e-02  err(psi)= 2.380405e-02  err(eps)= -4.164454e-04
+================================================================================
+For iteration :  4
+for state :  0 norm=  9.802035e-01  Energy=  -4.983401e-01  err(psi)= 4.813768e-02  err(eps)= -4.895986e-03
+for state :  1 norm=  9.939269e-01  Energy=  -1.245318e-01  err(psi)= 3.588067e-02  err(eps)= -9.652535e-04
+for state :  2 norm=  1.000539e+00  Energy=  -5.552846e-02  err(psi)= 1.323633e-02  err(eps)= -1.228999e-04
+================================================================================
+For iteration :  5
+for state :  0 norm=  9.892123e-01  Energy=  -4.996411e-01  err(psi)= 2.440799e-02  err(eps)= -1.204929e-03
+for state :  1 norm=  9.956499e-01  Energy=  -1.248646e-01  err(psi)= 2.333253e-02  err(eps)= -3.672838e-04
+for state :  2 norm=  9.999128e-01  Energy=  -5.555526e-02  err(psi)= 7.548667e-03  err(eps)= -3.553431e-05
+================================================================================
+For iteration :  6
+for state :  0 norm=  9.947235e-01  Energy=  -4.999257e-01  err(psi)= 1.152866e-02  err(eps)= -2.664119e-04
+for state :  1 norm=  9.971826e-01  Energy=  -1.249612e-01  err(psi)= 1.399840e-02  err(eps)= -1.238387e-04
+for state :  2 norm=  9.997914e-01  Energy=  -5.556230e-02  err(psi)= 4.281393e-03  err(eps)= -1.110997e-05
+================================================================================
+For iteration :  7
+for state :  0 norm=  9.975521e-01  Energy=  -4.999845e-01  err(psi)= 5.251104e-03  err(eps)= -5.538868e-05
+for state :  1 norm=  9.982980e-01  Energy=  -1.249882e-01  err(psi)= 8.037591e-03  err(eps)= -3.837759e-05
+for state :  2 norm=  9.997654e-01  Energy=  -5.556356e-02  err(psi)= 2.426267e-03  err(eps)= -2.606933e-06
+================================================================================
+For iteration :  8
+for state :  0 norm=  9.988927e-01  Energy=  -4.999965e-01  err(psi)= 2.352232e-03  err(eps)= -1.136587e-05
+for state :  1 norm=  9.990187e-01  Energy=  -1.249964e-01  err(psi)= 4.509923e-03  err(eps)= -1.205533e-05
+for state :  2 norm=  9.997795e-01  Energy=  -5.556451e-02  err(psi)= 1.391491e-03  err(eps)= -1.336660e-06
+================================================================================
+For iteration :  9
+for state :  0 norm=  9.995048e-01  Energy=  -4.999986e-01  err(psi)= 1.046486e-03  err(eps)= -2.019772e-06
+for state :  1 norm=  9.994460e-01  Energy=  -1.249985e-01  err(psi)= 2.500484e-03  err(eps)= -3.181377e-06
+for state :  2 norm=  9.997842e-01  Energy=  -5.556415e-02  err(psi)= 8.323441e-04  err(eps)= 2.553644e-07
+================================================================================
+For iteration :  10
+for state :  0 norm=  9.997804e-01  Energy=  -4.999994e-01  err(psi)= 4.642634e-04  err(eps)= -7.067924e-07
+for state :  1 norm=  9.996946e-01  Energy=  -1.249995e-01  err(psi)= 1.377829e-03  err(eps)= -1.361809e-06
+for state :  2 norm=  9.998013e-01  Energy=  -5.556495e-02  err(psi)= 5.106052e-04  err(eps)= -8.251694e-07
+================================================================================
+New eigenvalues : 
+Energy of state :  0   -4.999994e-01
+Energy of state :  1   -1.249995e-01
+Energy of state :  2   -5.556495e-02
+finishing at time 232.5
+MADNESS runtime finalized but 1 world still exists
+
+Process finished with exit code 0

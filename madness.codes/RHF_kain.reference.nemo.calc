@@ -1,0 +1,456 @@
+MADNESS wait timeout disabled.
+MADNESS runtime initialized with 39 threads in the pool and affinity -1 -1 -1
+
+  NEMO -- Hartree-Fock using numerical exponential molecular orbitals 
+
+starting at time 0.0
+
+--------------------------------------------
+   MADNESS 0.10.1 multiresolution suite
+--------------------------------------------
+
+   number of processors ... 1
+    processor frequency ... 2.394229e+09
+            host system ... Linux
+          configured by ... flbi
+          configured on ... node06
+          configured at ... 2022-07-09T23:39:51
+                    CXX ... /direct/opt/intel/oneapi/compiler/2021.2.0/linux/bin/intel64/icpc
+               CXXFLAGS ... -std=c++17
+             tuning for ... default
+                    MPI ... multiple
+ multi-threaded runtime ... MADNESS ThreadPool
+                   BLAS ... Intel MKL 18290 18290 MFLOP/s
+               compiled ... 23:44:14  on  Jul  9 2022
+    git revision at configure time ... ea173354addc2cb7eac0f909fa06eb0a8b2e4bd8
+    git revision at build time ...     ea173354addc2cb7eac0f909fa06eb0a8b2e4bd8
+    build time at ...                  23:44:13 on Jul  9 2022
+
+dft
+              charge  0.0000e+00 # defined   total molecular charge
+                  xc  hf         # defined   XC input line
+               smear  0.0000e+00 # default   smearing parameter
+               econv  1.0000e-06 # defined   energy convergence
+               dconv  1.0000e-04 # defined   density convergence
+convergence_criteria  [bsh_residual, total_energy] # default   possible values are: bsh_residual, total_energy, each_energy, density
+                   k  8          # defined   polynomial order
+                   l  5.0000e+01 # derived   user coordinates box size
+               deriv  abgv       # default   derivative method                            [abgv, bspline, ble]
+           dft_deriv  abgv       # default   derivative method for gga potentials         [abgv, bspline, ble]
+             maxrotn  2.5000e-01 # default   step restriction used in autoshift algorithm
+             nvalpha  0          # default   number of alpha virtuals to compute
+              nvbeta  0          # default   number of beta virtuals to compute
+               nopen  0          # default   number of unpaired electrons = nalpha-nbeta
+             maxiter  25         # default   maximum number of iterations
+                 nio  1          # default   no. of io servers to use
+     spin_restricted  true       # default   true if spin restricted
+              plotlo  0          # default   range of MOs to print (for both spins if polarized
+              plothi  -1         # default   range of MOs to print (for both spins if polarized
+            plotdens  false      # default   If true print the density at convergence
+            plotcoul  false      # default   If true plot the total coulomb potential at convergence
+            localize  new        # default   localization method                          [pm, boys, new, canon]
+          pointgroup  c1         # derived   use point (sub) group symmetry if not localized[c1, c2, ci, cs, c2v, c2h, d2, d2h]
+             restart  false      # default   if true restart from orbitals on disk
+           restartao  false      # default   if true restart from orbitals projected into AO basis (STO3G) on disk
+          no_compute  false      # default   if true use orbitals on disk, set value to computed
+                save  true       # default   if true save orbitals to disk
+              maxsub  10         # default   size of iterative subspace ... set to 0 or 1 to disable
+        orbitalshift  0.0000e+00 # default   scf orbital shift: shift the occ orbitals to lower energies
+            npt_plot  101        # default   no. of points to use in each dim for plots
+           plot_cell  []         # default   lo hi in each dimension for plotting (default is all space)
+             aobasis  6-31g      # derived   AO basis used for initial guess (6-31gss, 6-31g, 3-21g, sto-6g, sto-3g)
+         derivatives  false      # default   if true calculate nuclear derivatives
+              dipole  false      # default   if true calculate dipole moment
+      conv_only_dens  false      # default   if true remove bsh_residual from convergence criteria (deprecated)
+            psp_calc  false      # default   pseudopotential calculation for all atoms
+            pcm_data  none       # default   do a PCM (solvent) calculation
+             ac_data  none       # default   do a calculation with asymptotic correction (see ACParameters class in chem/AC.h for details)
+             pure_ae  true       # default   pure all electron calculation with no pseudo-atoms
+         print_level  3          # default   0: no output; 1: final energy; 2: iterations; 3: timings; 10: debug
+ molecular_structure  inputfile  # default   where to read the molecule from: inputfile or name from the library
+              nalpha  2          # derived   number of alpha spin electrons
+               nbeta  2          # derived   number of beta  spin electrons
+           nmo_alpha  2          # derived   number of alpha spin molecular orbitals
+            nmo_beta  2          # derived   number of beta spin molecular orbitals
+                  lo  4.2194e-03 # derived   smallest length scale we need to resolve
+            protocol  [1.0000e-04, 1.0000e-06] # derived   calculation protocol
+                gopt  false      # default   geometry optimizer
+                gtol  1.0000e-04 # default   geometry tolerance
+               gtest  false      # default   geometry tolerance
+                gval  1.0000e-05 # default   value precision
+               gprec  1.0000e-04 # default   gradient precision
+            gmaxiter  20         # default   optimization maxiter
+    ginitial_hessian  false      # default   compute inital hessian for optimization
+              algopt  bfgs       # default   algorithm used for optimization              [bfgs, cg]
+           nv_factor  1          # default   factor to multiply number of virtual orbitals with when automatically decreasing nvirt
+           vnucextra  2          # default   load balance parameter for nuclear pot
+        loadbalparts  2          # default   ??
+              nwfile  none       # default   Base name of nwchem output files (.out and .movecs extensions) to read from
+                 ncf  (slater,2.0000e+00) # default   nuclear correlation factor
+             hessian  false      # default   compute the hessian matrix
+           read_cphf  false      # default   read the converged orbital response for nuclear displacements from file
+        restart_cphf  false      # default   read the guess orbital response for nuclear displacements from file
+      purify_hessian  false      # default   symmetrize the hessian matrix based on atomic charges
+
+end
+
+
+ geometry
+              source  [inputfile, input] # derived   where to get the coordinates from: ({inputfile}, {library,xxx}, {xyz,xxx.xyz})
+               eprec  1.0000e-04 # default   smoothing for the nuclear potential
+               units  atomic     # default   coordinate units                             [atomic, angstrom]
+               field  [0.0000e+00, 0.0000e+00, 0.0000e+00] # default   external electric field
+           no_orient  false      # default   if true the molecule coordinates will not be reoriented
+           core_type  none       # default   core potential type                          [none, mpc]
+            psp_calc  false      # default   pseudopotential calculation for all atoms
+             pure_ae  true       # default   pure all electron calculation with no pseudo-atoms
+   Be                     0                   0                   0
+ end
+
+Solving NDIM= 3  with thresh 1.000000e-04     k 8    conv 1.000000e-04 
+
+timer:     Project vnuclear     0.09s     0.09s
+
+constructed nuclear correlation factor of the form
+  S_A = 1/(a-1) exp(-a Z_A r_{1A}) + 1
+    a =  2.000000e+00
+with eprec  1.000000e-04
+which is of Slater type
+
+timer:                 reproject ncf    0.20s 0.20s
+timer:        guess density     0.05s     0.05s
+ftrace 0.000000e+00
+                 result after apply_only at time 1.0s: norm/tree/#coeff/size: 110.38830 329,  1.471 m,  0.011 GByte
+timer:   guess Coulomb potn     0.12s     0.12s
+timer:       guess lda potn     0.03s     0.03s
+timer:        guess overlap     0.01s     0.01s
+timer:    KEmat reconstruct     0.00s     0.00s
+timer:  KEmat differentiate     0.17s     0.17s
+timer:       KEmat compress     0.04s     0.04s
+timer: KEmat inner products     0.03s     0.03s
+timer:     guess Kinet potn     0.24s     0.24s
+timer:           guess fock     0.05s     0.05s
+timer:      guess eigen sol     0.00s     0.00s
+timer: guess orbital groupi     0.01s     0.01s
+
+starting protocol at time     1.4s
+precision steps  1.000000e-04  -->  1.000000e-06
+protocol: thresh 1.000000e-04 econv  1.000000e-04 dconv 1.000000e-03
+
+ending protocol at time     1.4s
+
+Solving NDIM= 3  with thresh 1.000000e-04     k 8    conv 1.000000e-04 
+
+ftrace 0.000000e+00
+                 result after apply_only at time 1.7s: norm/tree/#coeff/size: 110.38636 321,  1.436 m,  0.011 GByte
+timer:   initialize Coulomb operator    0.16s 0.16s
+timer:         initialize K operator    0.07s 0.07s
+completed task   0 after    0.0s at time    1.8s
+completed task   1 after    0.2s at time    2.0s
+cloud storing cpu time 0.0
+cloud replication cpu time 0.0
+cloud reading cpu time 0.0 
+cloud cache stores     5
+cloud cache loads      5
+completed taskqueue after     0.2s at time  2.0s
+ total cpu time / per world   0.2s  0.2s
+timer:                 compute Knemo    0.22s 0.22s
+timer:      compute Unemo 0.00689697    0.15s 0.15s
+
+  nuclear and kinetic     -19.10198722
+         kinetic only      14.63434496
+              coulomb       7.22193270
+       exact exchange      -2.67488475
+    nuclear-repulsion       0.00000000
+   regularized energy     -14.55493927
+timer:                compute energy    0.43s 0.43s
+timer:           compute fock matrix    0.13s 0.13s
+timer:                     BSH apply    0.19s 0.19s
+timer:                 solver.update    0.02s 0.02s
+Norm of vector changes ab spin case : rms 3.364431e-02    max 4.625296e-02
+convergence: bshresidual, energy change, max energy change, density change 3.4e-02 1.5e+01 1.5e+01 1.4e+00
+timer:                orbital update    0.12s 0.12s
+finished iteration  0 at time      3.1s with energy  -14.55493927
+ftrace 0.000000e+00
+                 result after apply_only at time 3.3s: norm/tree/#coeff/size: 110.35818 321,  1.436 m,  0.011 GByte
+timer:   initialize Coulomb operator    0.14s 0.14s
+timer:         initialize K operator    0.08s 0.08s
+completed task   0 after    0.0s at time    3.4s
+completed task   1 after    0.2s at time    3.6s
+cloud storing cpu time 0.0
+cloud replication cpu time 0.0
+cloud reading cpu time 0.0 
+cloud cache stores     5
+cloud cache loads      5
+completed taskqueue after     0.2s at time  3.6s
+ total cpu time / per world   0.2s  0.2s
+timer:                 compute Knemo    0.19s 0.19s
+timer:      compute Unemo 0.00616455    0.14s 0.14s
+
+  nuclear and kinetic     -19.08311030
+         kinetic only      14.57941811
+              coulomb       7.18088644
+       exact exchange      -2.66997253
+    nuclear-repulsion       0.00000000
+   regularized energy     -14.57219639
+timer:                compute energy    0.36s 0.36s
+timer:           compute fock matrix    0.15s 0.15s
+timer:                     BSH apply    0.21s 0.21s
+timer:                 solver.update    0.04s 0.04s
+Norm of vector changes ab spin case : rms 1.676013e-02    max 2.355548e-02
+convergence: bshresidual, energy change, max energy change, density change 1.2e-02 1.7e-02 5.5e-02 1.7e-03
+timer:                orbital update    0.18s 0.18s
+finished iteration  1 at time      4.7s with energy  -14.57219639
+ftrace 0.000000e+00
+                 result after apply_only at time 4.8s: norm/tree/#coeff/size: 110.34034 321,  1.436 m,  0.011 GByte
+timer:   initialize Coulomb operator    0.10s 0.10s
+timer:         initialize K operator    0.06s 0.06s
+completed task   0 after    0.0s at time    4.9s
+completed task   1 after    0.2s at time    5.1s
+cloud storing cpu time 0.0
+cloud replication cpu time 0.0
+cloud reading cpu time 0.0 
+cloud cache stores     5
+cloud cache loads      5
+completed taskqueue after     0.2s at time  5.1s
+ total cpu time / per world   0.2s  0.2s
+timer:                 compute Knemo    0.19s 0.19s
+timer:      compute Unemo 0.00494385    0.27s 0.27s
+
+  nuclear and kinetic     -19.06230224
+         kinetic only      14.56774062
+              coulomb       7.15627668
+       exact exchange      -2.66678892
+    nuclear-repulsion       0.00000000
+   regularized energy     -14.57281447
+timer:                compute energy    0.36s 0.36s
+timer:           compute fock matrix    0.16s 0.16s
+timer:                     BSH apply    0.20s 0.20s
+timer:                 solver.update    0.06s 0.06s
+Norm of vector changes ab spin case : rms 5.805175e-04    max 7.580896e-04
+convergence: bshresidual, energy change, max energy change, density change 5.3e-04 6.2e-04 2.5e-02 3.9e-04
+timer:                orbital update    0.14s 0.14s
+finished iteration  2 at time      6.3s with energy  -14.57281447
+ftrace 0.000000e+00
+                 result after apply_only at time 6.5s: norm/tree/#coeff/size: 110.33980 321,  1.436 m,  0.011 GByte
+timer:   initialize Coulomb operator    0.10s 0.10s
+timer:         initialize K operator    0.07s 0.07s
+completed task   0 after    0.0s at time    6.6s
+completed task   1 after    0.2s at time    6.8s
+cloud storing cpu time 0.0
+cloud replication cpu time 0.0
+cloud reading cpu time 0.0 
+cloud cache stores     5
+cloud cache loads      5
+completed taskqueue after     0.2s at time  6.8s
+ total cpu time / per world   0.2s  0.2s
+timer:                 compute Knemo    0.20s 0.20s
+timer:      compute Unemo 0.00518799    0.13s 0.13s
+
+  nuclear and kinetic     -19.06159032
+         kinetic only      14.56953000
+              coulomb       7.15541777
+       exact exchange      -2.66663820
+    nuclear-repulsion       0.00000000
+   regularized energy     -14.57281075
+timer:                compute energy    0.40s 0.40s
+timer:           compute fock matrix    0.12s 0.12s
+timer:                     BSH apply    0.16s 0.16s
+timer:                 solver.update    0.07s 0.07s
+Norm of vector changes ab spin case : rms 8.960137e-05    max 1.147076e-04
+convergence: bshresidual, energy change, max energy change, density change 1.8e-04 3.7e-06 1.8e-03 1.5e-04
+timer:                orbital update    0.13s 0.13s
+finished iteration  3 at time      7.8s with energy  -14.57281075
+
+Iterations converged
+
+protocol: thresh 1.000000e-05 econv  1.000000e-05 dconv 3.162278e-04
+
+ending protocol at time     7.8s
+
+Solving NDIM= 3  with thresh 1.000000e-05     k 8    conv 1.000000e-04 
+
+timer:     Project vnuclear     0.07s     0.07s
+timer:                 reproject ncf    0.21s 0.21s
+ftrace 0.000000e+00
+                 result after apply_only at time 8.6s: norm/tree/#coeff/size: 110.33978 561,  2.509 m,  0.019 GByte
+timer:   initialize Coulomb operator    0.20s 0.20s
+timer:         initialize K operator    0.07s 0.07s
+completed task   0 after    0.0s at time    8.7s
+completed task   1 after    0.3s at time    9.0s
+cloud storing cpu time 0.0
+cloud replication cpu time 0.0
+cloud reading cpu time 0.0 
+cloud cache stores     5
+cloud cache loads      5
+completed taskqueue after     0.3s at time  9.0s
+ total cpu time / per world   0.3s  0.3s
+timer:                 compute Knemo    0.34s 0.34s
+timer:      compute Unemo 0.00567627    0.14s 0.14s
+
+  nuclear and kinetic     -19.06160884
+         kinetic only      14.57078786
+              coulomb       7.15550267
+       exact exchange      -2.66669452
+    nuclear-repulsion       0.00000000
+   regularized energy     -14.57280069
+timer:                compute energy    0.41s 0.41s
+timer:           compute fock matrix    0.14s 0.14s
+timer:                     BSH apply    0.25s 0.25s
+timer:                 solver.update    0.02s 0.02s
+Norm of vector changes ab spin case : rms 2.155861e-04    max 2.615526e-04
+convergence: bshresidual, energy change, max energy change, density change 2.2e-04 1.5e+01 1.5e+01 1.4e+00
+timer:                orbital update    0.13s 0.13s
+finished iteration  0 at time     10.1s with energy  -14.57280069
+ftrace 0.000000e+00
+                 result after apply_only at time 10.3s: norm/tree/#coeff/size: 110.33979 561,  2.509 m,  0.019 GByte
+timer:   initialize Coulomb operator    0.14s 0.14s
+timer:         initialize K operator    0.07s 0.07s
+completed task   0 after    0.0s at time   10.4s
+completed task   1 after    0.3s at time   10.6s
+cloud storing cpu time 0.0
+cloud replication cpu time 0.0
+cloud reading cpu time 0.0 
+cloud cache stores     5
+cloud cache loads      5
+completed taskqueue after     0.3s at time 10.6s
+ total cpu time / per world   0.3s  0.3s
+timer:                 compute Knemo    0.30s 0.30s
+timer:      compute Unemo 0.00567627    0.14s 0.14s
+
+  nuclear and kinetic     -19.06202999
+         kinetic only      14.57168916
+              coulomb       7.15583333
+       exact exchange      -2.66682535
+    nuclear-repulsion       0.00000000
+   regularized energy     -14.57302202
+timer:                compute energy    0.45s 0.45s
+timer:           compute fock matrix    0.14s 0.14s
+timer:                     BSH apply    0.23s 0.23s
+timer:                 solver.update    0.04s 0.04s
+Norm of vector changes ab spin case : rms 3.809198e-05    max 4.704264e-05
+convergence: bshresidual, energy change, max energy change, density change 3.7e-05 2.2e-04 9.0e-04 1.0e-04
+timer:                orbital update    0.13s 0.13s
+finished iteration  1 at time     11.8s with energy  -14.57302202
+ftrace 0.000000e+00
+                 result after apply_only at time 12.0s: norm/tree/#coeff/size: 110.33984 561,  2.509 m,  0.019 GByte
+timer:   initialize Coulomb operator    0.15s 0.15s
+timer:         initialize K operator    0.08s 0.08s
+completed task   0 after    0.0s at time   12.1s
+completed task   1 after    0.3s at time   12.4s
+cloud storing cpu time 0.0
+cloud replication cpu time 0.0
+cloud reading cpu time 0.0 
+cloud cache stores     5
+cloud cache loads      5
+completed taskqueue after     0.3s at time 12.4s
+ total cpu time / per world   0.3s  0.3s
+timer:                 compute Knemo    0.29s 0.29s
+timer:      compute Unemo 0.00567627    0.14s 0.14s
+
+  nuclear and kinetic     -19.06211222
+         kinetic only      14.57234734
+              coulomb       7.15596267
+       exact exchange      -2.66687287
+    nuclear-repulsion       0.00000000
+   regularized energy     -14.57302243
+timer:                compute energy    0.41s 0.41s
+timer:           compute fock matrix    0.15s 0.15s
+timer:                     BSH apply    0.25s 0.25s
+timer:                 solver.update    0.06s 0.06s
+Norm of vector changes ab spin case : rms 1.029568e-05    max 1.285861e-05
+convergence: bshresidual, energy change, max energy change, density change 1.3e-05 4.1e-07 6.6e-04 4.6e-05
+timer:                orbital update    0.15s 0.15s
+finished iteration  2 at time     13.6s with energy  -14.57302243
+
+Iterations converged
+
+protocol: thresh 1.000000e-06 econv  1.000000e-06 dconv 1.000000e-04
+
+ending protocol at time      14s
+
+Solving NDIM= 3  with thresh 1.000000e-06     k 8    conv 1.000000e-04 
+
+timer:     Project vnuclear     0.11s     0.11s
+timer:                 reproject ncf    0.23s 0.23s
+ftrace 0.000000e+00
+                 result after apply_only at time 14.4s: norm/tree/#coeff/size: 110.33986 905,  4.047 m,  0.030 GByte
+timer:   initialize Coulomb operator    0.25s 0.25s
+timer:         initialize K operator    0.08s 0.08s
+completed task   0 after    0.0s at time   14.5s
+completed task   1 after    0.4s at time   14.9s
+cloud storing cpu time 0.0
+cloud replication cpu time 0.0
+cloud reading cpu time 0.0 
+cloud cache stores     5
+cloud cache loads      5
+completed taskqueue after     0.4s at time 14.9s
+ total cpu time / per world   0.4s  0.4s
+timer:                 compute Knemo    0.42s 0.42s
+timer:      compute Unemo 0.00958252    0.16s 0.16s
+
+  nuclear and kinetic     -19.06214540
+         kinetic only      14.57276037
+              coulomb       7.15601699
+       exact exchange      -2.66689419
+    nuclear-repulsion       0.00000000
+   regularized energy     -14.57302259
+timer:                compute energy    0.44s 0.44s
+timer:           compute fock matrix    0.16s 0.16s
+timer:                     BSH apply    0.54s 0.54s
+timer:                 solver.update    0.11s 0.11s
+Norm of vector changes ab spin case : rms 1.242583e-05    max 1.345347e-05
+convergence: bshresidual, energy change, max energy change, density change 1.4e-05 1.5e+01 1.5e+01 1.4e+00
+timer:                orbital update    0.15s 0.15s
+finished iteration  0 at time     16.5s with energy  -14.57302259
+ftrace 0.000000e+00
+                 result after apply_only at time 16.7s: norm/tree/#coeff/size: 110.33986 905,  4.047 m,  0.030 GByte
+timer:   initialize Coulomb operator    0.20s 0.20s
+timer:         initialize K operator    0.11s 0.11s
+completed task   0 after    0.0s at time   16.9s
+completed task   1 after    0.4s at time   17.3s
+cloud storing cpu time 0.1
+cloud replication cpu time 0.0
+cloud reading cpu time 0.0 
+cloud cache stores     5
+cloud cache loads      5
+completed taskqueue after     0.5s at time 17.3s
+ total cpu time / per world   0.4s  0.4s
+timer:                 compute Knemo    0.47s 0.47s
+timer:      compute Unemo 0.00958252    0.18s 0.18s
+
+  nuclear and kinetic     -19.06215888
+         kinetic only      14.57291910
+              coulomb       7.15604205
+       exact exchange      -2.66690615
+    nuclear-repulsion       0.00000000
+   regularized energy     -14.57302299
+timer:                compute energy    0.50s 0.50s
+timer:           compute fock matrix    0.18s 0.18s
+timer:                     BSH apply    0.45s 0.45s
+timer:                 solver.update    0.18s 0.18s
+Norm of vector changes ab spin case : rms 2.827550e-06    max 3.579140e-06
+convergence: bshresidual, energy change, max energy change, density change 6.2e-06 3.9e-07 1.6e-04 6.8e-06
+timer:                orbital update    0.17s 0.17s
+finished iteration  1 at time     19.0s with energy  -14.57302299
+
+Iterations converged
+
+
+ending protocol at time      19s
+
+ Dipole Moment (a.u.)
+ -----------
+
+     x:  5.739854e-15
+     y:  1.271466e-14
+     z:  2.519316e-14
+ Total Dipole Moment:  2.879763e-14 
+
+timer:               dipole     0.01s     0.01s
+Nemo Orbital Energies: [*]  -4.73180876  -0.31013479
+
+{"dims":[3],"size":3,"vals":[5.7398544691058604e-15,1.271466149921622e-14,2.519315534908595e-14]}
+[{"scf_dipole_moment":{"dims":[3],"size":3,"vals":[-1.6771040792726147e-14,2.5456379428829665e-14,2.6267140495923907e-14]},"scf_energy":-14.5730229878118,"scf_iterations":0,"scf_k":8,"scf_threshold":1.0000000000000002e-06}]
+final energy   -14.57302299
+finished at time 19.1
